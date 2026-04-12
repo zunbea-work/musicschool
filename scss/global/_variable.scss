@@ -1,0 +1,17 @@
+
+// font - Yu Gothic文
+$font-serif: 'Yu Gothic', 'YuGothic', '游ゴシック', '游ゴシック体', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+
+// color
+$color-main: #CB0000;
+$color-back: #505050;
+$color-facebook: #425893;
+$color-twitter: #4A9FEB;
+$color-hatena: #4EACD5;
+$color-line: #52B534;
+$color-pocket: #DC4F5A;
+
+// vw関数
+@function vw($pixelSize, $baseWidth: 1080) {
+  @return calc($pixelSize / $baseWidth * 100vw);
+}

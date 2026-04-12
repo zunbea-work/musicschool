@@ -1,0 +1,13 @@
+
+// resetの読み込み
+@use '../scss/common/reset';
+
+// baseの読み込み
+@use '../scss/common/base';
+
+// componentの読み込み
+@use '../scss/common/component';
+
+// pageの読み込み
+@use '../scss/page';
+// @use '../scss/page/index';
