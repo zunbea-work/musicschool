@@ -1,13 +1,21 @@
 
 // resetの読み込み
-@use '../scss/common/reset';
+@use '../scss/foundation/reset';
 
 // baseの読み込み
-@use '../scss/common/base';
+@use '../scss/foundation/base';
+
+// variableの読み込み
+@use '../scss/foundation/variable';
+
+// mixinの読み込み
+@use '../scss/foundation/mixin';
+
+// headerの読み込み
+@use '../scss/layout/header';
 
 // componentの読み込み
-@use '../scss/common/component';
+@use '../scss/object/component';
 
-// pageの読み込み
-@use '../scss/page';
-// @use '../scss/page/index';
+// topの読み込み
+@use '../scss/object/project/top';

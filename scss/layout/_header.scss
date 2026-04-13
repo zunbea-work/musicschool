@@ -1,0 +1,42 @@
+@use '../foundation/variable' as *;
+@use '../foundation/mixin' as *;
+
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  // logo
+  &__logo {
+    a {
+      display: flex;
+      column-gap: vw(6.3, 375);
+      align-items: center;
+      h1 {
+        font-size: vw(13, 375);
+        line-height: calc(14 / 13);
+        font-weight: 700;
+      }
+    }
+    &-image {
+      width: vw(20.31, 375);
+    }
+  }
+  // nav
+  &-menu {
+    &__nav {
+
+    }
+    &__list {
+
+    }
+    &__item {
+      padding-block: 1.5rem 1rem;
+      a {
+        font-weight: 700;
+        display: block;
+      }
+    }
+  }
+}
