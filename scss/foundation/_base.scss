@@ -1,5 +1,5 @@
-@use '../global/variable.scss' as *;
-@use '../global/mixin.scss' as *;
+@use '../foundation/variable' as *;
+@use '../foundation/mixin' as *;
 
 html {
   -webkit-appearance: none;
@@ -21,6 +21,7 @@ body {
   font-size: 1.6rem;
   line-height: calc(33 / 16);
   font-weight: 500;
+  letter-spacing: 0;
 }
 
 // PC、 SPの非表示
