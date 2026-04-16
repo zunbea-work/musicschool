@@ -1,0 +1,47 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.c-hamburger {
+  width: vw(71);
+  height: 100%;
+  background: $color-main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inner {
+    position: relative;
+    width: vw(32);
+    height: vw(28);
+    span {
+      width: 100%;
+      height: vw(4);
+      background: #FFF;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 1rem;
+      transition: transform 0.4s;
+      &:nth-of-type(2) {
+        top: vw(12);
+      }
+      &:nth-of-type(3) {
+        top: vw(24);
+      }
+    }
+  }
+  &.is-active {
+    span {
+      &:nth-of-type(1) {
+        top: vw(12);
+        transform: rotate(45deg);
+      }
+      &:nth-of-type(2) {
+        display: none;
+      }
+      &:nth-of-type(3) {
+        top: vw(12);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

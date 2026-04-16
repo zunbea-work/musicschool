@@ -8,37 +8,43 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div id="container">
+  <div id="l-container">
     <header>
-      <div class="header">
-        <div class="header__logo">
+      <div class="l-header">
+        <!-- logo -->
+        <div class="l-header__logo">
           <a href="#">
-            <div class="header__logo-image">
+            <div class="l-header__logo-image">
               <img src="./img/common/icon.svg" alt="きたむらミュージックスクール">
             </div>
-            <h1>きたむらミュージックスクール</h1>
+            <h1 class="c-site-title">
+              <span class="c-site-title__main">きたむら</span>
+              <span class="c-site-title__sub">ミュージックスクール</span>
+            </h1>
           </a>
         </div>
-        <button id="js-hamburger" class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="header__menu header-menu">
-          <nav class="header-menu__nav">
-            <ul class="header-menu__list">
-              <li class="header-menu__item">
-                <a href="#price">料金</a>
-              </li>
-              <li class="header-menu__item">
-                <a href="#blog">ブログ</a>
-              </li>
-              <li class="header-menu__item">
-                <a href="#result">卒業実績</a>
-              </li>
-            </ul>
-          </nav>
+        <!-- ハンバーガーボタン -->
+        <div id="js-hamburger" class="c-hamburger u-sp-only">
+          <div class="c-hamburger__inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+        <!-- メニュー -->
+        <nav class="c-nav">
+          <ul class="c-nav__list">
+            <li class="c-nav__item">
+              <a href="#price">料金</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="#blog">ブログ</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="#result">卒業実績</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -50,5 +56,8 @@
       <div class="footer"></div>
     </footer>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
