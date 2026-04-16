@@ -25,13 +25,15 @@ body {
 }
 
 // PC、 SPの非表示
-@include sp {
-  .pc {
+.u-sp-only {
+  display: block;
+  @include pc {
     display: none !important;
   }
 }
-@include pc {
-  .sp {
+.u-ps-only {
+  display: block;
+  @include sp {
     display: none !important;
   }
 }
@@ -45,6 +47,7 @@ img {
 #container {
   width: 100%;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .inner {

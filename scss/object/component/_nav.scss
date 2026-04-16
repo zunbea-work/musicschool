@@ -1,0 +1,31 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+// nav
+.c-nav {
+  position: fixed;
+  top: vw(50);
+  right: 0;
+  transition: transform 0.4s;
+  transform: translateX(120%);
+  &__list {
+
+  }
+  &__item {
+    padding: 1.5rem 2rem 1rem;
+    background: $color-main;
+    width: vw(300);
+    height: vw(58);
+    a {
+      font-size: vw(18);
+      line-height: calc(33 / 18);
+      font-weight: 700;
+      display: block;
+      color: #FFF;
+    }
+  }
+  &.is-active {
+    transform: translateX(0);
+  }
+}
+

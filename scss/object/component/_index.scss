@@ -1,3 +1,5 @@
 // componentのエントリーポイント
-@use './title';
+@use './site-title';
 @use './button';
+@use './nav';
+@use './hamburger';

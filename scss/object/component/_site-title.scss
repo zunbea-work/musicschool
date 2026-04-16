@@ -1,0 +1,22 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.c-site-title {
+  font-size: vw(13);
+  line-height: calc(14 / 13);
+  font-weight: 700;
+  &__main {
+    @include pc {
+      font-size: hvw(20);
+      line-height: calc(23 / 20);
+      display: block;
+    }
+  }
+  &__sub {
+    @include pc {
+      font-size: hvw(15);
+      line-height: calc(23 / 13);
+      display: block;
+    }
+  }
+}

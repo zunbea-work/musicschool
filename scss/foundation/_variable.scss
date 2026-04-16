@@ -12,6 +12,12 @@ $color-line: #52B534;
 $color-pocket: #DC4F5A;
 
 // vw関数
-@function vw($pixelSize, $baseWidth: 1080) {
+// SPサイズの基本サイズ
+@function vw($pixelSize, $baseWidth: 375) {
   @return calc($pixelSize / $baseWidth * 100vw);
+}
+
+// PCサイズのmin関数
+@function hvw($pixelSize) {
+  @return min(calc($pixelSize / 1080 * 100vw), $pixelSize * 1px);
 }
