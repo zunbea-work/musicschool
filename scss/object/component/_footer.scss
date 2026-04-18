@@ -1,0 +1,40 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.c-footer {
+  &__logo {
+    width: vw(32);
+    margin: 1.8rem auto 0;
+    @include pc {
+      width: hvw(32);
+      margin-top: 2.1rem;
+    }
+  }
+  &__copyright {
+    color: #FFF;
+    font-size: vw(15);
+    line-height: calc(20 / 15);
+    text-align: center;
+    margin-top: 2.9rem;
+    @include pc {
+      font-size: hvw(15);
+      line-height: calc(33 / 15);
+      margin-top: 2.3rem;
+    }
+  }
+  &__sns {
+    .c-sns {
+      &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: vw(12);
+        margin-top: 1.6rem;
+        @include pc {
+          column-gap: hvw(12);
+          margin-top: 0.9rem;
+        }
+      }
+    }
+  }
+}

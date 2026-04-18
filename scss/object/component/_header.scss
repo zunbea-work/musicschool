@@ -1,0 +1,20 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+// logo
+.c-header__logo {
+  a {
+    display: flex;
+    column-gap: vw(6.3);
+    align-items: center;
+    @include pc {
+      column-gap: hvw(10);
+    }
+  }
+  &-image {
+    width: vw(20.31);
+    @include pc {
+      width: hvw(32);
+    }
+  }
+}
