@@ -10,9 +10,10 @@
   align-items: center;
   padding-left: 2rem;
   @include pc {
-    width: hvw(880);
+    width: hvw(1080);
     height: hvw(80);
     margin: 0 auto;
+    padding-inline: hvw(100);
   }
   // logo
   &__logo {
@@ -20,6 +21,9 @@
       display: flex;
       column-gap: vw(6.3);
       align-items: center;
+      @include pc {
+        column-gap: hvw(10);
+      }
     }
     &-image {
       width: vw(20.31);

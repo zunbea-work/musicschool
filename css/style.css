@@ -461,9 +461,10 @@ img {
 }
 @media (min-width: 768px) {
   .l-header {
-    width: min(81.4814814815vw, 880px);
+    width: min(100vw, 1080px);
     height: min(7.4074074074vw, 80px);
     margin: 0 auto;
+    padding-inline: min(9.2592592593vw, 100px);
   }
 }
 .l-header__logo a {
@@ -476,6 +477,13 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (min-width: 768px) {
+  .l-header__logo a {
+    -webkit-column-gap: min(0.9259259259vw, 10px);
+       -moz-column-gap: min(0.9259259259vw, 10px);
+            column-gap: min(0.9259259259vw, 10px);
+  }
 }
 .l-header__logo-image {
   width: 5.416vw;
@@ -501,7 +509,7 @@ img {
 @media (min-width: 768px) {
   .c-site-title__sub {
     font-size: min(1.3888888889vw, 15px);
-    line-height: 1.7692307692;
+    line-height: 1.5333333333;
     display: block;
   }
 }
@@ -517,11 +525,48 @@ img {
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
 }
+@media (min-width: 768px) {
+  .c-nav {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@media (min-width: 768px) {
+  .c-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: min(3.0555555556vw, 33px);
+       -moz-column-gap: min(3.0555555556vw, 33px);
+            column-gap: min(3.0555555556vw, 33px);
+  }
+}
 .c-nav__item {
   padding: 1.5rem 2rem 1rem;
   background: #CB0000;
   width: 80vw;
   height: 15.4666666667vw;
+}
+@media (min-width: 768px) {
+  .c-nav__item {
+    padding: 0;
+    width: auto;
+    height: min(7.4074074074vw, 80px);
+    background: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .c-nav__item a {
   font-size: 4.8vw;
@@ -529,6 +574,39 @@ img {
   font-weight: 700;
   display: block;
   color: #FFF;
+}
+@media (min-width: 768px) {
+  .c-nav__item a {
+    font-size: min(1.5740740741vw, 17px);
+    line-height: 1.9411764706;
+    color: #000;
+  }
+}
+.c-nav__item--contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  .c-nav__item--contact {
+    background: #CB0000;
+    width: min(13.8888888889vw, 150px);
+    height: min(4.1666666667vw, 45px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .c-nav__item--contact a {
+    color: #FFF;
+    font-size: min(1.3888888889vw, 15px);
+    line-height: 2.2;
+  }
 }
 .c-nav.is-active {
   -webkit-transform: translateX(0);
