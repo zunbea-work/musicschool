@@ -1,2 +1,22 @@
 @use '../../foundation/variable' as *;
 @use '../../foundation/mixin' as *;
+
+.c-cta {
+  text-align: center;
+  &__inner {
+    width: vw(335);
+    margin: 0 auto;
+    padding-block: vw(14) vw(13);
+    background: $color-main;
+    font-size: vw(20);
+    line-height: calc(33 / 20);
+    color: #FFF;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    @include pc {
+      width: hvw(300);
+      margin-inline: auto 0;
+      font-size: hvw(20);
+    }
+  }
+}

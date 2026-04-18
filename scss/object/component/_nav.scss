@@ -2,68 +2,96 @@
 @use '../../foundation/mixin' as *;
 
 // nav
-.c-nav {
-  position: fixed;
-  top: vw(50);
-  right: 0;
-  transition: transform 0.4s;
-  transform: translateX(120%);
-  @include pc {
-    position: static;
-    transform: none;
-  }
-  &__list {
+.c-nav{
+  // header用
+  &--header {
+    position: fixed;
+    top: vw(50);
+    right: 0;
+    transition: transform 0.4s;
+    transform: translateX(120%);
     @include pc {
-      display: flex;
-      align-items: center;
-      column-gap: hvw(33);
+      position: static;
+      transform: none;
     }
-  }
-  &__item {
-    padding: 1.5rem 2rem 1rem;
-    background: $color-main;
-    width: vw(300);
-    height: vw(58);
-    @include pc {
-      padding: 0;
-      width: auto;
-      height: hvw(80);
-      background: #FFF;
-      display: flex;
-      flex: 0 0 auto;
-      align-items: center;
-    }
-    a {
-      font-size: vw(18);
-      line-height: calc(33 / 18);
-      font-weight: 700;
-      display: block;
-      color: #FFF;
+    .c-nav__list {
       @include pc {
-        font-size: hvw(17);
-        line-height: calc(33 / 17);
-        color: #000;
+        display: flex;
+        align-items: center;
+        column-gap: hvw(33);
       }
     }
-    &--contact {
-      display: flex;
-      align-items: center;
+    .c-nav__item {
+      padding: 1.5rem 2rem 1rem;
+      background: $color-main;
+      width: vw(300);
+      height: vw(58);
       @include pc {
-        background: $color-main;
-        width: hvw(150);
-        height: hvw(45);
+        padding: 0;
+        width: auto;
+        height: hvw(80);
+        background: #FFF;
         display: flex;
-        justify-content: center;
-        a {
-          color: #FFF;
-          font-size: hvw(15);
-          line-height: calc(33 / 15);
+        flex: 0 0 auto;
+        align-items: center;
+      }
+      a {
+        font-size: vw(18);
+        line-height: calc(33 / 18);
+        font-weight: 700;
+        display: block;
+        color: #FFF;
+        @include pc {
+          font-size: hvw(17);
+          line-height: calc(33 / 17);
+          color: #000;
+        }
+      }
+      &--contact {
+        display: flex;
+        align-items: center;
+        @include pc {
+          background: $color-main;
+          width: hvw(150);
+          height: hvw(45);
+          display: flex;
+          justify-content: center;
+          a {
+            color: #FFF;
+            font-size: hvw(15);
+            line-height: calc(33 / 15);
+          }
         }
       }
     }
+    &.is-active {
+      transform: translateX(0);
+    }
   }
-  &.is-active {
-    transform: translateX(0);
+
+  // footer用
+  &--footer {
+    .c-nav__list {
+      display: flex;
+      justify-content: center;
+      padding-inline: vw(21);
+      column-gap: vw(30);
+      @include pc {
+        padding-inline: hvw(48);
+        column-gap: hvw(33);
+      }
+    }
+    .c-nav__item {
+      a {
+        font-size: vw(17);
+        line-height: calc(33 / 17);
+        font-weight: 700;
+        color: #FFF;
+        @include pc {
+          font-size: hvw(17);
+        }
+      }
+    }
   }
 }
 

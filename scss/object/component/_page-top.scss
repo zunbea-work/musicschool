@@ -1,0 +1,29 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.c-page-top {
+  position: fixed;
+  bottom: 38.1rem;
+  right: 2rem;
+  width: 6.8rem;
+  height: 6.8rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2.4rem;
+    border-right: 0.5rem solid #FFF;
+    border-radius: 10px;
+    &:nth-of-type(1) {
+      transform: translate(-30%, -50%) rotate(35deg);
+      transform-origin: top;
+    }
+    &:nth-of-type(2) {
+      transform: translate(-70%, -50%) rotate(-35deg);
+      transform-origin: top;
+    }
+  }
+}

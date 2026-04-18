@@ -1,0 +1,11 @@
+@use '../foundation/variable' as *;
+@use '../foundation/mixin' as *;
+
+.l-footer {
+  background: $color-main;
+  width: 100%;
+  padding: 4.4rem 2rem 5rem;
+  @include pc {
+    padding: hvw(44) hvw(340) hvw(48);
+  }
+}
