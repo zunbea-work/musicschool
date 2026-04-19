@@ -51,10 +51,10 @@ img {
 }
 
 .inner {
-  width: 33.5rem;
+  width: vw(335);
   margin: 0 auto;
   @include pc {
-    width: 88rem;
+    width: hvw(880);
   }
 }
 

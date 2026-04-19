@@ -435,12 +435,12 @@ img {
 }
 
 .inner {
-  width: 33.5rem;
+  width: 89.3333333333vw;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   .inner {
-    width: 88rem;
+    width: min(81.4814814815vw, 880px);
   }
 }
 
@@ -910,4 +910,101 @@ img {
 }
 .p-fv__catch span {
   display: block;
+}
+
+.p-concept__title {
+  font-size: 6.6666666667vw;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #CB0000;
+  text-align: center;
+}
+.p-concept__title span {
+  display: block;
+}
+.p-concept__text {
+  font-size: 4.8vw;
+  line-height: 1.6666666667;
+  margin-top: 1.8666666667vw;
+}
+.p-concept__image {
+  margin-top: 5.3333333333vw;
+  width: 100%;
+}
+.p-concept__contents {
+  position: relative;
+  margin-top: 8.5333333333vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10.6666666667vw;
+     -moz-column-gap: 10.6666666667vw;
+          column-gap: 10.6666666667vw;
+}
+.p-concept__contents-item {
+  font-size: 5.3333333333vw;
+  line-height: 2.5;
+}
+.p-concept__contents-item p:not(:first-child) {
+  padding-top: 4.5333333333vw;
+}
+.p-concept__contents-item:nth-of-type(1) {
+  text-align: right;
+  color: #CB0000;
+  font-weight: 700;
+}
+.p-concept__line {
+  position: relative;
+  top: -8vw;
+  width: 0.8vw;
+  height: 50.1333333333vw;
+  background: #CB0000;
+  border-radius: 1rem;
+}
+.p-concept__line .p-concept__arrow {
+  position: absolute;
+}
+.p-concept__line .p-concept__arrow:nth-of-type(1) {
+  top: -0.4rem;
+  left: 0.1rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  width: 5.6vw;
+  height: 0.8vw;
+  background: #CB0000;
+  border-radius: 1rem;
+}
+.p-concept__line .p-concept__arrow:nth-of-type(2) {
+  top: -0.4rem;
+  right: 0.1rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  width: 5.6vw;
+  height: 0.8vw;
+  background: #CB0000;
+  border-radius: 1rem;
+}
+.p-concept__line .p-concept__ball {
+  position: absolute;
+  bottom: -2.6666666667vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 5.3333333333vw;
+  height: 5.3333333333vw;
+  background: #CB0000;
+  border-radius: 50%;
+}
+.p-concept__line .p-concept__ball:nth-of-type(3) {
+  bottom: 5.5rem;
+}
+.p-concept__line .p-concept__ball:nth-of-type(4) {
+  bottom: 12rem;
 }
