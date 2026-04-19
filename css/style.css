@@ -836,8 +836,8 @@ img {
 
 .c-page-top {
   position: fixed;
-  bottom: 38.1rem;
-  right: 2rem;
+  bottom: 101.6vw;
+  right: 5.3333333333vw;
   width: 6.8rem;
   height: 6.8rem;
   background: rgba(0, 0, 0, 0.5);
@@ -845,7 +845,8 @@ img {
 }
 @media (min-width: 768px) {
   .c-page-top {
-    bottom: 36.5rem;
+    bottom: min(33.7962962963vw, 365px);
+    right: min(10.7407407407vw, 116px);
   }
 }
 .c-page-top span {
