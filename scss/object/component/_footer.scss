@@ -7,7 +7,7 @@
     margin: 1.8rem auto 0;
     @include pc {
       width: hvw(32);
-      margin-top: 2.1rem;
+      margin-top: hvw(21);
     }
   }
   &__copyright {
@@ -19,7 +19,7 @@
     @include pc {
       font-size: hvw(15);
       line-height: calc(33 / 15);
-      margin-top: 2.3rem;
+      margin-top: hvw(23);
     }
   }
   &__sns {
@@ -32,7 +32,7 @@
         margin-top: 1.6rem;
         @include pc {
           column-gap: hvw(12);
-          margin-top: 0.9rem;
+          margin-top: 0;
         }
       }
     }
