@@ -181,3 +181,41 @@
     }
   }
 }
+
+// アバウト
+.p-about {
+  padding: vw(49) vw(20) vw(40);
+  background: $color-main;
+  @include pc {
+    padding: hvw(68) hvw(100) hvw(60);
+  }
+  &__title {
+    font-size: vw(25);
+    line-height: calc(40 / 25);
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    @include pc {
+      font-size: hvw(30);
+      line-height: calc(50 / 30);
+    }
+    span {
+      display: block;
+      @include pc {
+        display: inline-block;
+      }
+    }
+  }
+  &__text {
+    margin-top: vw(14);
+    font-size: vw(18);
+    line-height: calc(30 / 18);
+    color: #FFF;
+    text-align: center;
+    @include pc {
+      margin-top: hvw(30);
+      font-size: hvw(18);
+      line-height: calc(30 / 18);
+    }
+  }
+}
