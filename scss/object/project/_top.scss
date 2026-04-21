@@ -219,3 +219,27 @@
     }
   }
 }
+
+// feature
+.p-feature {
+  padding: vw(49) vw(20) vw(39);
+  @include pc {
+    padding: hvw(64) hvw(100) hvw(90);
+  }
+  &__title {
+    font-size: vw(25);
+    line-height: calc(40 / 25);
+    font-weight: 700;
+    text-align: center;
+    @include pc {
+      font-size: hvw(30);
+      line-height: calc(50 / 30);
+    }
+  }
+  &-cards {
+    margin-top: vw(36);
+    @include pc {
+      margin-top: hvw(28);
+    }
+  }
+}
