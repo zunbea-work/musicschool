@@ -872,6 +872,70 @@ img {
           transform-origin: top;
 }
 
+@media (min-width: 768px) {
+  .c-feature-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.c-feature-card:not(:first-of-type) {
+  margin-top: 10.4vw;
+}
+@media (min-width: 768px) {
+  .c-feature-card:not(:first-of-type) {
+    margin-top: min(4.6296296296vw, 50px);
+  }
+  .c-feature-card:not(:first-of-type) .c-feature-card__body {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .c-feature-card__image {
+    width: min(32.4074074074vw, 350px);
+    height: 100%;
+  }
+}
+.c-feature-card__body {
+  margin-top: 8vw;
+}
+@media (min-width: 768px) {
+  .c-feature-card__body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: min(0.6481481481vw, 7px);
+  }
+}
+.c-feature-card__title {
+  font-size: 5.3333333333vw;
+  line-height: 1.5;
+  font-weight: 700;
+  padding-bottom: 2.6666666667vw;
+  border-bottom: solid 0.5333333333vw #CB0000;
+}
+@media (min-width: 768px) {
+  .c-feature-card__title {
+    font-size: min(2.037037037vw, 22px);
+    line-height: 1.5;
+    padding-left: min(4.6296296296vw, 50px);
+    padding-bottom: min(1.1111111111vw, 12px);
+    border-bottom: solid min(0.1851851852vw, 2px) #CB0000;
+  }
+}
+.c-feature-card__text {
+  line-height: 1.875;
+  margin-top: 4.5333333333vw;
+}
+@media (min-width: 768px) {
+  .c-feature-card__text {
+    font-size: min(1.6666666667vw, 18px);
+    line-height: 1.8333333333;
+    margin-top: min(3.4259259259vw, 37px);
+    padding-left: min(4.6296296296vw, 50px);
+  }
+}
+
 .p-fv {
   position: relative;
 }
@@ -1138,5 +1202,34 @@ img {
     margin-top: min(2.7777777778vw, 30px);
     font-size: min(1.6666666667vw, 18px);
     line-height: 1.6666666667;
+  }
+}
+
+.p-feature {
+  padding: 13.0666666667vw 5.3333333333vw 10.4vw;
+}
+@media (min-width: 768px) {
+  .p-feature {
+    padding: min(5.9259259259vw, 64px) min(9.2592592593vw, 100px) min(8.3333333333vw, 90px);
+  }
+}
+.p-feature__title {
+  font-size: 6.6666666667vw;
+  line-height: 1.6;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .p-feature__title {
+    font-size: min(2.7777777778vw, 30px);
+    line-height: 1.6666666667;
+  }
+}
+.p-feature-cards {
+  margin-top: 9.6vw;
+}
+@media (min-width: 768px) {
+  .p-feature-cards {
+    margin-top: min(2.5925925926vw, 28px);
   }
 }
