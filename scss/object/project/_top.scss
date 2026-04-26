@@ -243,3 +243,23 @@
     }
   }
 }
+
+// result
+.p-result {
+  padding: vw(46) vw(20) vw(50);
+  background: $color-main;
+  @include pc {
+    padding: hvw(44) hvw(100) hvw(80);
+  }
+  &__title {
+    font-size: vw(25);
+    line-height: calc(40 / 25);
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    @include pc {
+      font-size: hvw(30);
+      line-height: calc(50 / 30);
+    }
+  }
+}
