@@ -1075,6 +1075,25 @@ img {
   margin-top: 2.1333333333vw;
 }
 
+.c-section-title {
+  font-size: 6.6666666667vw;
+  line-height: 1.6;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .c-section-title {
+    font-size: min(2.7777777778vw, 30px);
+    line-height: 1.6666666667;
+  }
+}
+.c-section-title--white {
+  color: #FFF;
+}
+.c-section-title--red {
+  color: #CB0000;
+}
+
 .p-fv {
   position: relative;
 }
@@ -1121,27 +1140,6 @@ img {
 @media (min-width: 768px) {
   .p-concept {
     padding: min(6.1111111111vw, 66px) min(10.1851851852vw, 110px) min(5.0925925926vw, 55px);
-  }
-}
-.p-concept__title {
-  font-size: 6.6666666667vw;
-  line-height: 1.6;
-  font-weight: 700;
-  color: #CB0000;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .p-concept__title {
-    font-size: min(3.2407407407vw, 35px);
-    line-height: 1.4285714286;
-  }
-}
-.p-concept__title span {
-  display: block;
-}
-@media (min-width: 768px) {
-  .p-concept__title span {
-    display: inline-block;
   }
 }
 .p-concept__text {
@@ -1308,27 +1306,6 @@ img {
     padding: min(6.2962962963vw, 68px) min(9.2592592593vw, 100px) min(5.5555555556vw, 60px);
   }
 }
-.p-about__title {
-  font-size: 6.6666666667vw;
-  line-height: 1.6;
-  font-weight: 700;
-  color: #FFF;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .p-about__title {
-    font-size: min(2.7777777778vw, 30px);
-    line-height: 1.6666666667;
-  }
-}
-.p-about__title span {
-  display: block;
-}
-@media (min-width: 768px) {
-  .p-about__title span {
-    display: inline-block;
-  }
-}
 .p-about__text {
   margin-top: 3.7333333333vw;
   font-size: 4.8vw;
@@ -1352,18 +1329,6 @@ img {
     padding: min(5.9259259259vw, 64px) min(9.2592592593vw, 100px) min(8.3333333333vw, 90px);
   }
 }
-.p-feature__title {
-  font-size: 6.6666666667vw;
-  line-height: 1.6;
-  font-weight: 700;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .p-feature__title {
-    font-size: min(2.7777777778vw, 30px);
-    line-height: 1.6666666667;
-  }
-}
 .p-feature-cards {
   margin-top: 9.6vw;
 }
@@ -1380,18 +1345,5 @@ img {
 @media (min-width: 768px) {
   .p-result {
     padding: min(4.0740740741vw, 44px) min(9.2592592593vw, 100px) min(7.4074074074vw, 80px);
-  }
-}
-.p-result__title {
-  font-size: 6.6666666667vw;
-  line-height: 1.6;
-  font-weight: 700;
-  color: #FFF;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .p-result__title {
-    font-size: min(2.7777777778vw, 30px);
-    line-height: 1.6666666667;
   }
 }
