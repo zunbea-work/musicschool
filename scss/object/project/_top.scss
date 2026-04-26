@@ -208,3 +208,128 @@
     padding: hvw(44) hvw(100) hvw(80);
   }
 }
+
+// flow
+.p-flow {
+  padding: vw(46) vw(20) vw(20);
+  &__contents {
+    margin-top: vw(38);
+    padding-left: vw(48);
+    position: relative;
+    @include pc {
+      margin-top: hvw(38);
+    }
+  }
+  &__item {
+    @include pc {
+      display: flex;
+      column-gap: hvw(38);
+    }
+    &:not(:first-of-type) {
+      margin-top: vw(36);
+      @include pc {
+        margin-top: hvw(58);
+      }
+    }
+    h3 {
+      font-size: vw(22);
+      line-height: calc(33 / 22);
+      font-weight: 700;
+      color: $color-main;
+      @include pc {
+        font-size: hvw(22);
+        line-height: calc(33 / 22);
+        width: hvw(154);
+      }
+    }
+    p {
+      margin-top: vw(9);
+      font-size: vw(16);
+      line-height: calc(30 / 16);
+      @include pc {
+        margin-top: 0;
+        font-size: hvw(18);
+        line-height: calc(30 / 18);
+      }
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: vw(16);
+    left: vw(18);
+    width: vw(3);
+    height: vw(669);
+    background: $color-main;
+    @include pc {
+      top: hvw(20);
+      left: hvw(61);
+      width: hvw(3);
+      height: 100%;
+    }
+    &::before {
+      content: '';
+      width: vw(21);
+      height: vw(3);
+      background: $color-main;
+      position: absolute;
+      bottom: -3px;
+      right: 1px;
+      border-radius: 10px 0 0 10px;
+      transform: rotate(45deg);
+      transform-origin: right;
+      @include pc {
+        width: hvw(21);
+        height: hvw(3);
+      }
+    }
+    &::after {
+      content: '';
+      width: vw(21);
+      height: vw(3);
+      background: $color-main;
+      position: absolute;
+      bottom: -3px;
+      left: 1px;
+      border-radius: 0 10px 10px 0;
+      transform: rotate(-45deg);
+      transform-origin: left;
+      @include pc {
+        width: hvw(21);
+        height: hvw(3);
+      }
+    }
+  }
+  &__ball {
+    position: absolute;
+    top: vw(-10);
+    left: vw(-8);
+    width: vw(20);
+    height: vw(20);
+    background: $color-main;
+    border-radius: 50%;
+    @include pc {
+      top: hvw(-12);
+      left: hvw(-7);
+      width: hvw(20);
+      height: hvw(20);
+    }
+    &:nth-of-type(2) {
+      top: vw(158);
+      @include pc {
+        top: hvw(105);
+      }
+    }
+    &:nth-of-type(3) {
+      top: vw(356);
+      @include pc {
+        top: hvw(222);
+      }
+    }
+    &:nth-of-type(4) {
+      top: vw(524);
+      @include pc {
+        top: hvw(342);
+      }
+    }
+  }
+}
