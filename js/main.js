@@ -25,4 +25,24 @@ $(function() {
       scrollTop: 0
     }, 500);
   });
+
+  // スライダー
+  $('.slider').slick({
+    arrows:true,
+    prevArrow: '<button class="arrow prev"></button>',
+    nextArrow: '<button class="arrow next"></button>',
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
 });
