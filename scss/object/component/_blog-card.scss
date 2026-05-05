@@ -1,0 +1,74 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.c-blog-card {
+  &:not(:first-of-type) {
+    margin-top: vw(41);
+    @include pc {
+      margin-top: 0;
+    }
+  }
+  &__image {
+    position: relative;
+    @include pc {
+
+    }
+    &-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: vw(90);
+      height: vw(30);
+      background: $color-main;
+      color: #FFF;
+      font-size: vw(15);
+      line-height: calc(25 / 15);
+      font-weight: 700;
+      @include pc {
+        width: hvw(80);
+        height: hvw(30);
+        font-size: hvw(15);
+      }
+    }
+  }
+  &__title {
+    margin-top: vw(30);
+    font-size: vw(20);
+    line-height: calc(30 / 20);
+    font-weight: 700;
+    @include pc {
+      margin-top: hvw(20);
+      font-size: hvw(20);
+      line-height: calc(25 / 20);
+    }
+  }
+  &__time {
+    margin-top: vw(6);
+    font-size: vw(17);
+    line-height: calc(30 / 17);
+    text-align: right;
+    @include pc {
+      margin-top: hvw(11);
+      font-size: hvw(17);
+    }
+  }
+  &__link {
+    margin-top: vw(37);
+    text-align: center;
+    font-size: vw(18);
+    line-height: calc(30 / 18);
+    font-weight: 500;
+    @include pc {
+      margin-top: hvw(37);
+      font-size: hvw(18);
+      text-align: right;
+    }
+    a {
+      text-decoration: underline;
+      text-underline-offset: 0.3rem;
+    }
+  }
+}

@@ -45,4 +45,10 @@ $(function() {
       }
     ]
   });
+
+  // アコーディオンメニュー
+  $('.p-question__q').on('click', function() {
+    $(this).toggleClass('active');
+    $(this).next().slideToggle();
+  });
 });
