@@ -1,0 +1,124 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+// 料金体系
+.p-princing {
+  padding-top: 4.6rem;
+  &__contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.9rem
+  }
+  &__price {
+    &-box {
+      margin-block: 1.9rem 2rem;
+    }
+    &-text {
+      width: 21rem;
+      background: $color-main;
+      text-align: center;
+      font-size: vw(20);
+      line-height: calc(33 / 20);
+      padding-block: 1.5rem 1.2rem;
+      color: #FFF;
+      font-weight: 700;
+    }
+  }
+  &__text {
+    margin-top: 4.7rem;
+    line-height: calc(30 / 16);
+  }
+}
+
+// プラン内容・月額料金
+.p-plan {
+  padding-top: 3.8rem;
+  padding-bottom: 12.6rem;
+  &__table-wrap {
+    overflow-x: scroll;
+    padding-bottom: 1.75rem;
+    &::-webkit-scrollbar {
+      height: 2.3rem;
+      background: rgba(80, 80, 80, 0.15);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(80, 80, 80, 0.25);
+    }
+  }
+  &__table {
+    margin-top: 3.6rem;
+  }
+  &__price {
+    border-top: #000 solid 0.5px;
+    td {
+      font-size: vw(22);
+      line-height: calc(33 / 22);
+    }
+  }
+  &__recommend {
+    color: $color-main;
+  }
+  &-ball {
+    width: vw(15);
+    height: vw(15);
+    margin: 0 auto;
+  }
+  &-line {
+    &::before {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 1px;
+      background: #000;
+      margin: 0 auto;
+    }
+  }
+  &--gray {
+    background: rgba(80, 80, 80, 0.15);
+  }
+  &__comment {
+    margin-top: 1.7rem;
+    font-size: vw(16);
+    line-height: calc(30 / 16);
+  }
+  table {
+    border-collapse: collapse;
+    min-width: 67rem;
+    thead {
+      th:nth-of-type(1),
+      th:nth-of-type(3) {
+        border: none;
+      }
+      th {
+        text-align: center;
+        vertical-align: middle;
+        font-size: vw(20);
+        line-height: calc(25 / 20);
+        color: #FFF;
+
+      }
+    }
+    tbody {
+      border-bottom: #000 solid 0.5px;
+      th, td {
+        width: 22rem;
+        height: 8.5rem;
+        vertical-align: middle;
+        border-left: #000 solid 0.5px;
+        &:first-child {
+          border-left: none;
+        }
+      }
+      th {
+        padding-left: 1rem;
+      }
+      td {
+        text-align: center;
+      }
+    }
+  }
+}
+.c-page-top {
+  
+}

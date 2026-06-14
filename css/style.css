@@ -1217,9 +1217,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 1.8rem;
-     -moz-column-gap: 1.8rem;
-          column-gap: 1.8rem;
+  -webkit-column-gap: 1.9rem;
+     -moz-column-gap: 1.9rem;
+          column-gap: 1.9rem;
   font-size: 4.2666666667vw;
   line-height: 2.0625;
   padding-top: 0.3rem;
@@ -1816,4 +1816,137 @@ img {
        -moz-column-gap: min(4.6296296296vw, 50px);
             column-gap: min(4.6296296296vw, 50px);
   }
+}
+
+.p-princing {
+  padding-top: 4.6rem;
+}
+.p-princing__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3.9rem;
+}
+.p-princing__price-box {
+  margin-block: 1.9rem 2rem;
+}
+.p-princing__price-text {
+  width: 21rem;
+  background: #CB0000;
+  text-align: center;
+  font-size: 5.3333333333vw;
+  line-height: 1.65;
+  padding-block: 1.5rem 1.2rem;
+  color: #FFF;
+  font-weight: 700;
+}
+.p-princing__text {
+  margin-top: 4.7rem;
+  line-height: 1.875;
+}
+
+.p-plan {
+  padding-top: 3.8rem;
+  padding-bottom: 12.6rem;
+}
+.p-plan__table-wrap {
+  overflow-x: scroll;
+  padding-bottom: 1.75rem;
+}
+.p-plan__table-wrap::-webkit-scrollbar {
+  height: 2.3rem;
+  background: rgba(80, 80, 80, 0.15);
+}
+.p-plan__table-wrap::-webkit-scrollbar-thumb {
+  background: rgba(80, 80, 80, 0.25);
+}
+.p-plan__table {
+  margin-top: 3.6rem;
+}
+.p-plan__price {
+  border-top: #000 solid 0.5px;
+}
+.p-plan__price td {
+  font-size: 5.8666666667vw;
+  line-height: 1.5;
+}
+.p-plan__recommend {
+  color: #CB0000;
+}
+.p-plan-ball {
+  width: 4vw;
+  height: 4vw;
+  margin: 0 auto;
+}
+.p-plan-line::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 1px;
+  background: #000;
+  margin: 0 auto;
+}
+.p-plan--gray {
+  background: rgba(80, 80, 80, 0.15);
+}
+.p-plan__comment {
+  margin-top: 1.7rem;
+  font-size: 4.2666666667vw;
+  line-height: 1.875;
+}
+.p-plan table {
+  border-collapse: collapse;
+  min-width: 67rem;
+}
+.p-plan table thead th:nth-of-type(1),
+.p-plan table thead th:nth-of-type(3) {
+  border: none;
+}
+.p-plan table thead th {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 5.3333333333vw;
+  line-height: 1.25;
+  color: #FFF;
+}
+.p-plan table tbody {
+  border-bottom: #000 solid 0.5px;
+}
+.p-plan table tbody th, .p-plan table tbody td {
+  width: 22rem;
+  height: 8.5rem;
+  vertical-align: middle;
+  border-left: #000 solid 0.5px;
+}
+.p-plan table tbody th:first-child, .p-plan table tbody td:first-child {
+  border-left: none;
+}
+.p-plan table tbody th {
+  padding-left: 1rem;
+}
+.p-plan table tbody td {
+  text-align: center;
+}
+
+.u-fw-700 {
+  font-weight: 700;
+}
+
+.u-fw-500 {
+  font-weight: 500;
+}
+
+.u-color--black {
+  background: #000;
+}
+
+.u-color--red {
+  background: #CB0000;
 }
