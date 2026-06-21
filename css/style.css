@@ -1838,7 +1838,7 @@ img {
   margin-block: 1.9rem 2rem;
 }
 .p-princing__price-text {
-  width: 21rem;
+  width: 56vw;
   background: #CB0000;
   text-align: center;
   font-size: 5.3333333333vw;
@@ -1874,15 +1874,15 @@ img {
   border-top: #000 solid 0.5px;
 }
 .p-plan__price td {
-  font-size: 5.8666666667vw;
+  font-size: 2.2rem;
   line-height: 1.5;
 }
 .p-plan__recommend {
   color: #CB0000;
 }
 .p-plan-ball {
-  width: 4vw;
-  height: 4vw;
+  width: 1.5rem;
+  height: 1.5rem;
   margin: 0 auto;
 }
 .p-plan-line::before {
@@ -1898,7 +1898,7 @@ img {
 }
 .p-plan__comment {
   margin-top: 1.7rem;
-  font-size: 4.2666666667vw;
+  font-size: 1.6rem;
   line-height: 1.875;
 }
 .p-plan table {
@@ -1912,7 +1912,7 @@ img {
 .p-plan table thead th {
   text-align: center;
   vertical-align: middle;
-  font-size: 5.3333333333vw;
+  font-size: 2rem;
   line-height: 1.25;
   color: #FFF;
 }
