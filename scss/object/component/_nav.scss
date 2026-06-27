@@ -10,6 +10,7 @@
     right: 0;
     transition: transform 0.4s;
     transform: translateX(120%);
+    z-index: 10;
     @include pc {
       position: static;
       transform: none;
