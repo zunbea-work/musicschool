@@ -3,16 +3,28 @@
 
 // 料金体系
 .p-princing {
-  padding-top: 4.6rem;
+  padding-top: vw(46);
+  @include pc {
+    padding-top: hvw(67);
+  }
   &__contents {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3.9rem
+    margin-top: 3.9rem;
+    @include pc {
+      margin-top: hvw(40);
+      flex-direction: row;
+      justify-content: center;
+      column-gap: hvw(30);
+    }
   }
   &__price {
     &-box {
       margin-block: 1.9rem 2rem;
+      @include pc {
+        margin-block: 1.85rem;
+      }
     }
     &-text {
       width: vw(210);
@@ -23,11 +35,21 @@
       padding-block: 1.5rem 1.2rem;
       color: #FFF;
       font-weight: 700;
+      @include pc {
+        width: hvw(210);
+        font-size: hvw(20);
+        line-height: calc(33 / 20);
+      }
     }
   }
   &__text {
     margin-top: 4.7rem;
     line-height: calc(30 / 16);
+    @include pc {
+      font-size: hvw(18);
+      line-height: calc(30 / 18);
+      margin-top: 4.8rem;
+    }
   }
 }
 
@@ -48,6 +70,14 @@
   }
   &__table {
     margin-top: 3.6rem;
+  }
+  &-text {
+    span {
+      @include pc {
+        font-size: hvw(17);
+        line-height: calc(33 / 17);
+      }
+    }
   }
   &__price {
     border-top: #000 solid 0.5px;

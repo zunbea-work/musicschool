@@ -552,6 +552,7 @@ img {
   transition: transform 0.4s, -webkit-transform 0.4s;
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .c-nav--header {
@@ -1208,6 +1209,12 @@ img {
   font-weight: 700;
   color: #FFF;
 }
+@media (min-width: 768px) {
+  .c-page-fv__catch {
+    font-size: min(2.3148148148vw, 25px);
+    line-height: 2.4;
+  }
+}
 
 .c-breadcrumb {
   width: 100%;
@@ -1224,6 +1231,13 @@ img {
   line-height: 2.0625;
   padding-top: 0.3rem;
   padding-left: 5.3333333333vw;
+}
+@media (min-width: 768px) {
+  .c-breadcrumb__list {
+    padding-left: min(9.3518518519vw, 101px);
+    font-size: min(1.4814814815vw, 16px);
+    line-height: 2.0625;
+  }
 }
 
 .p-fv {
@@ -1819,7 +1833,12 @@ img {
 }
 
 .p-princing {
-  padding-top: 4.6rem;
+  padding-top: 12.2666666667vw;
+}
+@media (min-width: 768px) {
+  .p-princing {
+    padding-top: min(6.2037037037vw, 67px);
+  }
 }
 .p-princing__contents {
   display: -webkit-box;
@@ -1834,8 +1853,28 @@ img {
           align-items: center;
   margin-top: 3.9rem;
 }
+@media (min-width: 768px) {
+  .p-princing__contents {
+    margin-top: min(3.7037037037vw, 40px);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: min(2.7777777778vw, 30px);
+       -moz-column-gap: min(2.7777777778vw, 30px);
+            column-gap: min(2.7777777778vw, 30px);
+  }
+}
 .p-princing__price-box {
   margin-block: 1.9rem 2rem;
+}
+@media (min-width: 768px) {
+  .p-princing__price-box {
+    margin-block: 1.85rem;
+  }
 }
 .p-princing__price-text {
   width: 56vw;
@@ -1847,9 +1886,23 @@ img {
   color: #FFF;
   font-weight: 700;
 }
+@media (min-width: 768px) {
+  .p-princing__price-text {
+    width: min(19.4444444444vw, 210px);
+    font-size: min(1.8518518519vw, 20px);
+    line-height: 1.65;
+  }
+}
 .p-princing__text {
   margin-top: 4.7rem;
   line-height: 1.875;
+}
+@media (min-width: 768px) {
+  .p-princing__text {
+    font-size: min(1.6666666667vw, 18px);
+    line-height: 1.6666666667;
+    margin-top: 4.8rem;
+  }
 }
 
 .p-plan {
@@ -1869,6 +1922,12 @@ img {
 }
 .p-plan__table {
   margin-top: 3.6rem;
+}
+@media (min-width: 768px) {
+  .p-plan-text span {
+    font-size: min(1.5740740741vw, 17px);
+    line-height: 1.9411764706;
+  }
 }
 .p-plan__price {
   border-top: #000 solid 0.5px;
