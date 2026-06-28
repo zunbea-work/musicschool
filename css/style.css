@@ -384,16 +384,6 @@ html {
   word-break: break-all;
   font-size: 10px;
 }
-@media (min-width: 768px) and (max-width: 940px) {
-  html {
-    font-size: 2.6666666667vw;
-  }
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 1.0638297872vw;
-  }
-}
 
 body {
   font-family: "Yu Gothic", "YuGothic", "游ゴシック", "游ゴシック体", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
@@ -1913,6 +1903,11 @@ img {
   overflow-x: scroll;
   padding-bottom: 1.75rem;
 }
+@media (min-width: 768px) {
+  .p-plan__table-wrap {
+    overflow-x: unset;
+  }
+}
 .p-plan__table-wrap::-webkit-scrollbar {
   height: 2.3rem;
   background: rgba(80, 80, 80, 0.15);
@@ -1922,12 +1917,6 @@ img {
 }
 .p-plan__table {
   margin-top: 3.6rem;
-}
-@media (min-width: 768px) {
-  .p-plan-text span {
-    font-size: min(1.5740740741vw, 17px);
-    line-height: 1.9411764706;
-  }
 }
 .p-plan__price {
   border-top: #000 solid 0.5px;
@@ -1975,6 +1964,18 @@ img {
   line-height: 1.25;
   color: #FFF;
 }
+@media (min-width: 768px) {
+  .p-plan table thead th {
+    font-size: min(1.8518518519vw, 20px);
+    line-height: 1.65;
+  }
+}
+@media (min-width: 768px) {
+  .p-plan table thead th span {
+    font-size: min(1.5740740741vw, 17px);
+    line-height: 1.9411764706;
+  }
+}
 .p-plan table tbody {
   border-bottom: #000 solid 0.5px;
 }
@@ -1983,6 +1984,12 @@ img {
   height: 8.5rem;
   vertical-align: middle;
   border-left: #000 solid 0.5px;
+}
+@media (min-width: 768px) {
+  .p-plan table tbody th, .p-plan table tbody td {
+    font-size: min(1.5740740741vw, 17px);
+    line-height: 1.7647058824;
+  }
 }
 .p-plan table tbody th:first-child, .p-plan table tbody td:first-child {
   border-left: none;
