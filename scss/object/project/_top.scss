@@ -448,21 +448,20 @@
 
 // blog
 .p-blog {
-  padding: vw(50) vw(20) vw(132);
-  @include pc {
-    padding: hvw(70) hvw(100) hvw(145);
-  }
   &__list {
-    margin-top: vw(39);
-    @include pc {
-      margin-top: hvw(38);
-    }
     &--top {
       @include pc {
         display: flex;
         justify-content: space-between;
         column-gap: hvw(50);
       }
+    }
+  }
+}
+.c-blog-card--top {
+  &:not(:first-of-type) {
+    @include pc {
+      margin-top: 0;
     }
   }
 }
