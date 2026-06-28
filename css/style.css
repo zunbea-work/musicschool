@@ -1168,6 +1168,10 @@ img {
   text-underline-offset: 0.3rem;
 }
 
+.c-article__contents p {
+  margin-top: 2.1333333333vw;
+}
+
 .c-page-fv {
   position: relative;
   width: 100%;
@@ -1809,7 +1813,7 @@ img {
   }
 }
 @media (min-width: 768px) {
-  .p-blog__list {
+  .p-blog__list--top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
