@@ -457,12 +457,12 @@
     @include pc {
       margin-top: hvw(38);
     }
-  }
-  &__list {
-  @include pc {
-    display: flex;
-    justify-content: space-between;
-    column-gap: hvw(50);
-  }
+    &--top {
+      @include pc {
+        display: flex;
+        justify-content: space-between;
+        column-gap: hvw(50);
+      }
+    }
   }
 }
