@@ -1,0 +1,35 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-blog-details {
+  padding: vw(50) vw(20) vw(132);
+  .c-details-sns {
+    margin-top: vw(21);
+    &__list {
+      display: flex;
+      column-gap: vw(3);
+    }
+    &__item {
+      width: vw(65);
+      height: vw(40);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.facebook {
+  background:rgba(66, 88, 147, 1);
+}
+.twitter {
+  background: rgba(74, 159, 235, 1);
+}
+.hatena {
+  background: rgba(78, 172, 213, 1);
+}
+.line {
+  background: rgba(82, 181, 52, 1);
+}
+.pocket {
+  background: rgba(220, 79, 90, 1);
+}
