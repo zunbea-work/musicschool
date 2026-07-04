@@ -501,6 +501,11 @@ img {
 }
 
 .c-cta {
+  position: fixed;
+  bottom: 80.5333333333vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
 }
 .c-cta__inner {
