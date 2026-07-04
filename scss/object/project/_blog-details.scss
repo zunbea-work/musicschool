@@ -17,7 +17,114 @@
       align-items: center;
     }
   }
+  &__text {
+    margin-top: vw(10);
+    p {
+      margin-top: vw(17);
+      font-size: vw(16);
+      line-height: calc(30 / 16);
+    }
+    h2 {
+      margin-top: vw(39);
+      font-size: vw(20);
+      line-height: calc(30 / 20);
+      font-weight: 700;
+    }
+  }
+  &__contents {
+    margin-top: vw(39);
+    &-list {
+      margin-top: vw(27);
+      font-size: vw(16);
+      line-height: calc(30 / 16);
+      list-style: inside;
+    }
+  }
+  &__quote {
+    margin-top: vw(38.5);
+    padding-top: vw(50);
+    border-top: solid 0.5px #000;
+    h3 {
+      font-size: vw(20);
+      line-height: calc(30 / 20);
+      font-weight: 700;
+      margin-left: vw(9.5);
+      position: relative;
+      &::before {
+        content: "";
+        width: vw(3);
+        height: vw(50);
+        background: #000;
+        left: -0.95rem;
+        position: absolute;
+      }
+    }
+    &-textarea {
+      margin-top: vw(19.5);
+      display: flex;
+      align-items: start;
+      padding: 1.7rem 2rem 1.1rem 2.5rem;
+      column-gap: 2.5rem;
+      background: #E8E8E8
+    }
+    &-icon {
+      width: vw(27);
+      height: vw(23);
+    }
+    &-text {
+      flex: 1;
+      font-size: vw(16);
+      line-height: calc(30 / 16);
+    }
+    &-link {
+      margin-top: vw(27);
+      a {
+        font-size: vw(20);
+        line-height: calc(33 / 20);
+        font-weight: 700;
+        color: $color-main;
+        border-bottom: solid 1px $color-main;
+      }
+    }
+  }
+  &__pager {
+    display: flex;
+    column-gap: vw(22);
+    margin-top: vw(45);
+    &-prev {
+      span {
+        display: block;
+        padding-left: vw(20);
+      }
+    }
+    &-next {
+      span {
+        display: block;
+        text-align: right;
+        padding-right: vw(20);
+      }
+    }
+    span {
+      display: block;
+      background: #000;
+      color: #FFF;
+      font-size: vw(17);
+      line-height: calc(30 / 17);
+      padding-block: vw(4) vw(3);
+    }
+    p {
+      margin-top: vw(15);
+      font-size: vw(16);
+      line-height: calc(25 / 16);
+      font-weight: 700;
+    }
+  }
 }
+
+
+
+
+
 .facebook {
   background:rgba(66, 88, 147, 1);
 }
