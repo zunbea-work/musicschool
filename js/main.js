@@ -26,6 +26,19 @@ $(function() {
     }, 500);
   });
 
+  // 問い合わせ
+  var toCta = $('.js-cta');
+
+  toCta.hide();
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 600) {
+      toCta.fadeIn(300);
+    } else {
+      toCta.fadeOut(300);
+    }
+  });
+
   // スライダー
   $('.slider').slick({
     arrows:true,
