@@ -8,35 +8,42 @@ $(function() {
   });
 
   // Topへ戻る
-  var goTop = $('.js-page-top');
+  var floating = $('.js-floating');
+  var footer = $('footer');
 
-  goTop.hide();
+    // 表示数値設定
+  var showPosition = 600;
+  var bottomSpace = 20;
+  var fadeSpeed = 300;
 
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 600) {
-      goTop.fadeIn(300);
+  floating.hide();
+
+  $(window).on('scroll', function () {
+
+    const scrollTop = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const footerTop = footer.offset().top;
+    const footerDistance = footerTop - (scrollTop + windowHeight);
+
+    if (scrollTop > showPosition) {
+      floating.fadeIn(fadeSpeed);
     } else {
-      goTop.fadeOut(300);
+      floating.fadeOut(fadeSpeed);
+    }
+
+    if (footerDistance < 0) {
+      floating.css('transform', `translateY(${footerDistance + bottomSpace}px)`);
+    } else {
+      floating.css('transform', 'translateY(0)');
     }
   });
+
+  var goTop = $('.js-page-top');
 
   goTop.on('click', function () {
     $('body,html').animate({
       scrollTop: 0
     }, 500);
-  });
-
-  // 問い合わせ
-  var toCta = $('.js-cta');
-
-  toCta.hide();
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 600) {
-      toCta.fadeIn(300);
-    } else {
-      toCta.fadeOut(300);
-    }
   });
 
   // スライダー

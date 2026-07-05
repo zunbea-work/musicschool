@@ -1,0 +1,13 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.c-floating {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+
+  &.is-stop {
+    transform: translateY(-230px);
+  }
+}
