@@ -1989,8 +1989,16 @@ img {
   line-height: 1.5;
 }
 .p-plan__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  vertical-align: middle;
   font-size: 2rem;
   line-height: 1.25;
   color: #FFF;
@@ -2005,7 +2013,10 @@ img {
 }
 .p-plan__head--recommend {
   height: 8rem;
-  color: #CB0000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .p-plan-ball {
   width: 1.5rem;
@@ -2035,6 +2046,10 @@ img {
 .p-plan table thead th:nth-of-type(1),
 .p-plan table thead th:nth-of-type(3) {
   border: none;
+}
+.p-plan table thead th {
+  vertical-align: bottom;
+  padding: 0;
 }
 .p-plan table thead th span {
   font-size: 1.7rem;
