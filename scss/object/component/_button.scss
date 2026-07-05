@@ -3,11 +3,16 @@
 
 .c-cta {
   position: absolute;
-  bottom: vw(20);
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   pointer-events: auto;
+  @include pc {
+    bottom: hvw(20);
+    right: 0;
+    transform: unset;
+  }
   &__inner {
     width: vw(335);
     margin: 0 auto;

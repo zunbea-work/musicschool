@@ -56,7 +56,10 @@
 // プラン内容・月額料金
 .p-plan {
   padding-top: 3.8rem;
-  padding-bottom: 12.6rem;
+  padding-bottom: 18.6rem;
+  @include pc {
+    padding-bottom: 22.3rem;
+  }
   &__table-wrap {
     overflow-x: scroll;
     padding-bottom: 1.75rem;

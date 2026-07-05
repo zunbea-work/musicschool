@@ -476,7 +476,7 @@ img {
 }
 @media (min-width: 768px) {
   .l-footer {
-    padding: min(4.0740740741vw, 44px) min(31.4814814815vw, 340px) min(4.4444444444vw, 48px);
+    padding: min(4.0740740741vw, 44px) 0 min(4.4444444444vw, 48px);
   }
 }
 
@@ -502,12 +502,20 @@ img {
 
 .c-cta {
   position: absolute;
-  bottom: 5.3333333333vw;
+  bottom: 2rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   text-align: center;
   pointer-events: auto;
+}
+@media (min-width: 768px) {
+  .c-cta {
+    bottom: min(1.8518518519vw, 20px);
+    right: 0;
+    -webkit-transform: unset;
+            transform: unset;
+  }
 }
 .c-cta__inner {
   width: 89.3333333333vw;
@@ -843,7 +851,7 @@ img {
 }
 @media (min-width: 768px) {
   .c-page-top {
-    bottom: min(33.7962962963vw, 365px);
+    bottom: min(9.2592592593vw, 100px);
     right: min(10.7407407407vw, 116px);
   }
 }
@@ -1960,7 +1968,12 @@ img {
 
 .p-plan {
   padding-top: 3.8rem;
-  padding-bottom: 12.6rem;
+  padding-bottom: 18.6rem;
+}
+@media (min-width: 768px) {
+  .p-plan {
+    padding-bottom: 22.3rem;
+  }
 }
 .p-plan__table-wrap {
   overflow-x: scroll;
