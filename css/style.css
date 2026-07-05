@@ -1988,7 +1988,23 @@ img {
   font-size: 2.2rem;
   line-height: 1.5;
 }
-.p-plan__recommend {
+.p-plan__head {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+  line-height: 1.25;
+  color: #FFF;
+  height: 6.6rem;
+}
+@media (min-width: 768px) {
+  .p-plan__head {
+    height: min(4.6296296296vw, 50px);
+    font-size: min(1.8518518519vw, 20px);
+    line-height: 1.65;
+  }
+}
+.p-plan__head--recommend {
+  height: 8rem;
   color: #CB0000;
 }
 .p-plan-ball {
@@ -2020,18 +2036,9 @@ img {
 .p-plan table thead th:nth-of-type(3) {
   border: none;
 }
-.p-plan table thead th {
-  text-align: center;
-  vertical-align: middle;
-  font-size: 2rem;
-  line-height: 1.25;
-  color: #FFF;
-}
-@media (min-width: 768px) {
-  .p-plan table thead th {
-    font-size: min(1.8518518519vw, 20px);
-    line-height: 1.65;
-  }
+.p-plan table thead th span {
+  font-size: 1.7rem;
+  line-height: 1.4705882353;
 }
 @media (min-width: 768px) {
   .p-plan table thead th span {
