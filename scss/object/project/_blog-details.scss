@@ -2,7 +2,7 @@
 @use '../../foundation/mixin' as *;
 
 .p-blog-details {
-  padding: vw(50) vw(20) vw(132);
+  padding: vw(50) vw(20) vw(197);
   .c-details-sns {
     margin-top: vw(21);
     &__list {
@@ -16,6 +16,19 @@
       justify-content: center;
       align-items: center;
     }
+  }
+  &__title {
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    background: #000;
+    color: #FFF;
+    font-size: vw(18);
+    line-height: calc(33 / 18);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__text {
     margin-top: vw(10);
@@ -117,6 +130,104 @@
       font-size: vw(16);
       line-height: calc(25 / 16);
       font-weight: 700;
+    }
+  }
+  &__related {
+    margin-top: vw(71);
+    &-item {
+      margin-top: vw(20);
+    }
+    &-link {
+      display: flex;
+      column-gap: vw(20);
+      align-items: center;
+      .c-blog-card__image {
+        width: vw(160);
+        &-text {
+          width: vw(80);
+        }
+      }
+      .p-blog__related-textarea {
+        flex: 1;
+        .p-blog__related-title {
+          font-size: vw(17);
+          line-height: calc(28 / 17);
+        }
+        .c-blog-card__time {
+          font-size: vw(17);
+          line-height: calc(30 / 17);
+          text-align: left;
+        }
+      }
+    }
+  }
+  &__newsletter {
+    margin-top: vw(30);
+    &-banner {
+      border: solid 0.05rem #000 ;
+      &__text {
+        background: rgba(232, 232, 232, 1);
+        height: vw(228);
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &__search {
+    margin-top: vw(30);
+    &-form {
+      border: solid 0.05rem #000;
+      display: flex;
+      justify-content: center;
+      padding: vw(20);
+    }
+    &-input {
+      background: rgba(232, 232, 232, 1);
+      display: block;
+      width: 100%;
+      height: vw(54);
+    }
+    &-button {
+      background: #000;
+      display: inline-block;
+      width: vw(54);
+      height: vw(54);
+      padding: vw(11) vw(14);
+    }
+  }
+  &__recommend {
+    margin-top: vw(30);
+    &-item {
+      margin-top: vw(20);
+    }
+    &-link {
+      display: flex;
+      column-gap: vw(20);
+    }
+    &-image {
+      width: vw(160);
+      height: vw(110);
+      background: rgba(80, 80, 80, 0.1);
+    }
+    &-title {
+      flex: 1;
+      font-size: vw(17);
+      line-height: calc(28 / 17);
+      margin-top: vw(8.5);
+    }
+  }
+  &__category {
+    margin-top: vw(30);
+    &-item {
+      border-bottom: solid 0.05rem #000;
+      a {
+        display: block;
+        font-size: vw(17);
+        line-height: vw(28);
+        margin-block: vw(12) vw(7);
+      }
     }
   }
 }
