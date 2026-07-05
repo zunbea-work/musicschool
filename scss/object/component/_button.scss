@@ -2,11 +2,12 @@
 @use '../../foundation/mixin' as *;
 
 .c-cta {
-  position: fixed;
-  bottom: vw(302);
+  position: absolute;
+  bottom: vw(20);
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  pointer-events: auto;
   &__inner {
     width: vw(335);
     margin: 0 auto;
