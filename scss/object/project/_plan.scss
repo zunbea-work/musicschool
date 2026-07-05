@@ -81,8 +81,22 @@
       line-height: calc(33 / 22);
     }
   }
-  &__recommend {
-    color: $color-main;
+  &__head {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2rem;
+    line-height: calc(25 / 20);
+    color: #FFF;
+    height: 6.6rem;
+    @include pc {
+      height: hvw(50);
+      font-size: hvw(20);
+      line-height: calc(33 / 20);
+    }
+    &--recommend {
+      height: 8rem;
+      color: $color-main;
+    }
   }
   &-ball {
     width: 1.5rem;
@@ -116,21 +130,14 @@
         border: none;
       }
       th {
-        text-align: center;
-        vertical-align: middle;
-        font-size: 2rem;
-        line-height: calc(25 / 20);
-        color: #FFF;
-        @include pc {
-          font-size: hvw(20);
-          line-height: calc(33 / 20);
-        }
         span {
-        @include pc {
-        font-size: hvw(17);
-        line-height: calc(33 / 17);
-      }
-    }
+          font-size: 1.7rem;
+          line-height: calc(25 / 17);
+            @include pc {
+            font-size: hvw(17);
+            line-height: calc(33 / 17);
+          }
+        }
       }
     }
     tbody {
