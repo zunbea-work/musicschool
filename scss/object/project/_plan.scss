@@ -82,8 +82,10 @@
     }
   }
   &__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    vertical-align: middle;
     font-size: 2rem;
     line-height: calc(25 / 20);
     color: #FFF;
@@ -95,7 +97,7 @@
     }
     &--recommend {
       height: 8rem;
-      color: $color-main;
+      flex-direction: column;
     }
   }
   &-ball {
@@ -130,6 +132,8 @@
         border: none;
       }
       th {
+        vertical-align: bottom;
+        padding: 0;
         span {
           font-size: 1.7rem;
           line-height: calc(25 / 17);
