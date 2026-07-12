@@ -13,7 +13,7 @@ $(function() {
 
     // 表示数値設定
   var showPosition = 600;
-  var bottomSpace = 20;
+  var bottomSpace = 0;
   var fadeSpeed = 300;
 
   floating.hide();
