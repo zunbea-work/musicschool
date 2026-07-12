@@ -78,7 +78,10 @@
         <div class="inner">
           <article class="p-blog-details__main">
             <div class="c-blog-card__image">
-              <img src="../img/blog/blog01.jpg" alt="">
+              <picture>
+                <source media="(min-width: 768px)" srcset="../img/blog/blog01-pc.jpg">
+                <img src="../img/blog/blog01.jpg" alt="">
+              </picture>
               <p class="c-blog-card__image-text">ギター</p>
             </div>
             <div class="c-blog-card__title">
@@ -90,29 +93,34 @@
             <div class="p-blog-details__sns">
               <nav class="c-details-sns">
                 <ul class="c-details-sns__list">
-                  <li class="c-details-sns__item facebook">
+                  <li class="c-details-sns__item c-details-sns__item--facebook">
                     <a href="#">
                       <img src="../img/blog/icon-share-facebook.svg" alt="facebook">
+                      <p class="u-ps-only">Facebook</p>
                     </a>
                   </li>
-                  <li class="c-details-sns__item twitter">
+                  <li class="c-details-sns__item c-details-sns__item--twitter">
                     <a href="#">
                       <img src="../img/blog/icon-share-twitter.svg" alt="twitter">
+                      <p class="u-ps-only">twitter</p>
                     </a>
                   </li>
-                  <li class="c-details-sns__item hatena">
+                  <li class="c-details-sns__item c-details-sns__item--hatena">
                     <a href="#">
                       <img src="../img/blog/icon-share-hatena.svg" alt="hatena">
+                      <p class="u-ps-only">Hatena</p>
                     </a>
                   </li>
-                  <li class="c-details-sns__item line">
+                  <li class="c-details-sns__item c-details-sns__item--line">
                     <a href="#">
                       <img src="../img/blog/icon-share-line.svg" alt="line">
+                      <p class="u-ps-only">LINE</p>
                     </a>
                   </li>
-                  <li class="c-details-sns__item pocket">
+                  <li class="c-details-sns__item c-details-sns__item--pocket">
                     <a href="#">
                       <img src="../img/blog/icon-share-pocket.svg" alt="pocket">
+                      <p class="u-ps-only">Pocket</p>
                     </a>
                   </li>
                 </ul>
@@ -126,7 +134,9 @@
             </section>
 
             <section class="p-blog-details__contents">
-              <img src="../img/blog/brog_Mask.jpg" alt="技術面はプロによるマンツーマン授業！">
+              <div class="p-blog-details__contents-image">
+                <img src="../img/blog/brog_Mask.jpg" alt="技術面はプロによるマンツーマン授業！">
+              </div>
               <ul class="p-blog-details__contents-list">
                 <li>リストが入ります</li>
                 <li>リストが入ります</li>
@@ -147,12 +157,22 @@
 
             <section class="p-blog-details__pager">
               <a href="#" class="p-blog-details__pager-prev">
-                <span>◀︎ 前の記事</span>
-                <p>タイトルが入ります。タイトルが入ります。タイトルが入</p>
+                <p class="p-blog-details__pager-label">◀︎ 前の記事</p>
+                <div class="p-blog-details__pager-contents">
+                  <div class="p-blog-details__pager-contents-image u-ps-only">
+                    <img src="../img/blog/blog03.jpg" alt="ギター">
+                  </div>
+                  <p class="p-blog-details__pager-text">タイトルが入ります。タイトルが入ります。タイトルが入</p>
+                </div>
               </a>
               <a href="#" class="p-blog-details__pager-next">
-                <span>次の記事 ▶︎</span>
-                <p>タイトルが入ります。タイトルが入ります。タイトルが入</p>
+                <p class="p-blog-details__pager-label">次の記事 ▶︎</p>
+                <div class="p-blog-details__pager-contents">
+                  <div class="p-blog-details__pager-contents-image u-ps-only">
+                    <img src="../img/blog/blog03.jpg" alt="ギター">
+                  </div>
+                  <p class="p-blog-details__pager-text">タイトルが入ります。タイトルが入ります。タイトルが入</p>
+                </div>
               </a>
             </section>
 
@@ -166,7 +186,7 @@
                       <p class="c-blog-card__image-text">ギター</p>
                     </div>
                     <div class="p-blog__related-textarea">
-                      <h3 class="p-blog__related-title">タイトルが入ります。タイトル</h3>
+                      <h3 class="p-blog__related-title">タイトルが入ります。タイトル<span class="u-ps-only">が入ります。タイトルが入ります。</span></h3>
                       <div class="c-blog-card__time">
                         <time datetime="0000-00-00">0000.00.00</time>
                       </div>
@@ -180,7 +200,7 @@
                       <p class="c-blog-card__image-text">ギター</p>
                     </div>
                     <div class="p-blog__related-textarea">
-                      <h3 class="p-blog__related-title">タイトルが入ります。タイトル</h3>
+                      <h3 class="p-blog__related-title">タイトルが入ります。タイトル<span class="u-ps-only">が入ります。タイトルが入ります。</span></h3>
                       <div class="c-blog-card__time">
                         <time datetime="0000-00-00">0000.00.00</time>
                       </div>
@@ -194,7 +214,7 @@
                       <p class="c-blog-card__image-text">ギター</p>
                     </div>
                     <div class="p-blog__related-textarea">
-                      <h3 class="p-blog__related-title">タイトルが入ります。タイトル</h3>
+                      <h3 class="p-blog__related-title">タイトルが入ります。タイトル<span class="u-ps-only">が入ります。タイトルが入ります。</span></h3>
                       <div class="c-blog-card__time">
                         <time datetime="0000-00-00">0000.00.00</time>
                       </div>
@@ -204,6 +224,7 @@
               </ul>
             </section>
           </article>
+
           <aside class="p-blog-details__sub">
             <section class="p-blog-details__newsletter">
               <h2 class="p-blog-details__title">無料メールマガジン</h2>
