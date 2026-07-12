@@ -511,7 +511,7 @@ img {
 }
 @media (min-width: 768px) {
   .c-cta {
-    bottom: min(1.8518518519vw, 20px);
+    bottom: 0;
     right: 0;
     -webkit-transform: unset;
             transform: unset;
