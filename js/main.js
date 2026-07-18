@@ -47,24 +47,34 @@ $(function() {
   });
 
   // スライダー
-  $('.slider').slick({
-    arrows:true,
-    prevArrow: '<button class="arrow prev"></button>',
-    nextArrow: '<button class="arrow next"></button>',
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
+  const swiper = new Swiper('.p-result__swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
+  // $('.slider').slick({
+  //   arrows:true,
+  //   prevArrow: '<button class="arrow prev"></button>',
+  //   nextArrow: '<button class="arrow next"></button>',
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 3,
+  //   adaptiveHeight: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 767,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       }
+  //     }
+  //   ]
+  // });
 
   // アコーディオンメニュー
   $('.p-question__q').on('click', function() {

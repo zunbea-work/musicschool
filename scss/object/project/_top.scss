@@ -207,6 +207,33 @@
   @include pc {
     padding: hvw(44) hvw(100) hvw(80);
   }
+  &__swiper {
+    overflow: hidden;
+  }
+}
+// swiper
+.swiper-button-prev,
+.swiper-button-next {
+  &::after {
+    display: none;
+  }
+  width: vw(30);
+  height: vw(30);
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: vw(25);
+    height: vw(7);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+  }
+}
+.swiper-button-prev {
+  &::after {
+    transform: rotate(45deg);
+    transform-origin: left center;
+  }
 }
 
 // flow
@@ -221,6 +248,12 @@
     position: relative;
     @include pc {
       margin-top: hvw(38);
+      padding-left: hvw(121);
+    }
+  }
+  &__items {
+    @include pc {
+      max-width: 88rem;
     }
   }
   &__item {
@@ -265,7 +298,7 @@
     background: $color-main;
     @include pc {
       top: hvw(20);
-      left: hvw(61);
+      left: 6.1rem;
       width: hvw(3);
       height: 100%;
     }
@@ -311,8 +344,9 @@
     background: $color-main;
     border-radius: 50%;
     @include pc {
-      top: hvw(-12);
-      left: hvw(-7);
+      top: -1.2rem;
+      left: 50%;
+      transform: translateX(-50%);
       width: hvw(20);
       height: hvw(20);
     }
