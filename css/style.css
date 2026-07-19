@@ -2017,7 +2017,7 @@ img {
 }
 @media (min-width: 768px) {
   .p-plan__table-wrap {
-    overflow-x: unset;
+    overflow-x: scroll;
   }
 }
 .p-plan__table-wrap::-webkit-scrollbar {
