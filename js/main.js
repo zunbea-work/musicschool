@@ -52,29 +52,17 @@ $(function() {
     slidesPerView: 1,
     spaceBetween: 20,
 
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      }
+    },
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   });
-  // $('.slider').slick({
-  //   arrows:true,
-  //   prevArrow: '<button class="arrow prev"></button>',
-  //   nextArrow: '<button class="arrow next"></button>',
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 300,
-  //   slidesToShow: 3,
-  //   adaptiveHeight: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 767,
-  //       settings: {
-  //         slidesToShow: 1,
-  //       }
-  //     }
-  //   ]
-  // });
 
   // アコーディオンメニュー
   $('.p-question__q').on('click', function() {
