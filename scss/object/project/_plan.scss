@@ -64,7 +64,7 @@
     overflow-x: scroll;
     padding-bottom: 1.75rem;
     @include pc {
-      overflow-x: unset;
+      overflow-x: scroll;
     }
     &::-webkit-scrollbar {
       height: 2.3rem;
