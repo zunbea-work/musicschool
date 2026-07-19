@@ -7,13 +7,6 @@ html {
   scroll-behavior: smooth;
   word-break: break-all;
   font-size: 10px;
-  // コード書いた時に確認
-  // @media (min-width: 768px) and (max-width: 940px) {
-  //   font-size: vw(10, 375);
-  // }
-  // @include pc {
-  //   font-size: vw(10, 940);
-  // }
 }
 
 body {

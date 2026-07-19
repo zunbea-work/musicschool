@@ -502,7 +502,7 @@ img {
 
 .c-cta {
   position: absolute;
-  bottom: 2rem;
+  bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -511,7 +511,6 @@ img {
 }
 @media (min-width: 768px) {
   .c-cta {
-    bottom: 0;
     right: 0;
     -webkit-transform: unset;
             transform: unset;
@@ -1476,6 +1475,7 @@ img {
 .p-result {
   padding: 12.2666666667vw 5.3333333333vw 13.3333333333vw;
   background: #CB0000;
+  position: relative;
 }
 @media (min-width: 768px) {
   .p-result {
@@ -1486,14 +1486,18 @@ img {
   overflow: hidden;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-}
 .swiper-button-prev,
 .swiper-button-next {
+  position: absolute;
   width: 8vw;
   height: 8vw;
+}
+@media (min-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: min(2.7777777778vw, 30px);
+    height: min(2.7777777778vw, 30px);
+  }
 }
 .swiper-button-prev::before, .swiper-button-prev::after,
 .swiper-button-next::before,
@@ -1505,12 +1509,88 @@ img {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
 }
+@media (min-width: 768px) {
+  .swiper-button-prev::before, .swiper-button-prev::after,
+  .swiper-button-next::before,
+  .swiper-button-next::after {
+    width: min(2.6851851852vw, 29px);
+    height: min(0.6481481481vw, 7px);
+  }
+}
 
+.swiper-button-prev {
+  left: 5.3333333333vw;
+}
+@media (min-width: 768px) {
+  .swiper-button-prev {
+    left: min(5.5555555556vw, 60px);
+  }
+}
 .swiper-button-prev::after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
   -webkit-transform-origin: left center;
           transform-origin: left center;
+  top: 5.3333333333vw;
+}
+@media (min-width: 768px) {
+  .swiper-button-prev::after {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+    top: min(-0.2777777778vw, -3px);
+  }
+}
+.swiper-button-prev::before {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  top: 4vw;
+}
+@media (min-width: 768px) {
+  .swiper-button-prev::before {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    top: min(-0.2777777778vw, -3px);
+  }
+}
+
+.swiper-button-next {
+  right: 5.3333333333vw;
+}
+@media (min-width: 768px) {
+  .swiper-button-next {
+    right: 1rem;
+    right: min(5.5555555556vw, 60px);
+  }
+}
+.swiper-button-next::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  top: 5.3333333333vw;
+}
+@media (min-width: 768px) {
+  .swiper-button-next::after {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+    top: min(-0.462962963vw, -5px);
+  }
+}
+.swiper-button-next::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  top: 4vw;
+}
+@media (min-width: 768px) {
+  .swiper-button-next::before {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    top: min(-0.462962963vw, -5px);
+  }
 }
 
 .p-flow {

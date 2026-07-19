@@ -3,13 +3,12 @@
 
 .c-cta {
   position: absolute;
-  bottom: 2rem;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   pointer-events: auto;
   @include pc {
-    bottom: 0;
     right: 0;
     transform: unset;
   }

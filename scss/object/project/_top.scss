@@ -204,6 +204,7 @@
 .p-result {
   padding: vw(46) vw(20) vw(50);
   background: $color-main;
+  position: relative;
   @include pc {
     padding: hvw(44) hvw(100) hvw(80);
   }
@@ -214,25 +215,74 @@
 // swiper
 .swiper-button-prev,
 .swiper-button-next {
-  &::after {
-    display: none;
-  }
+  position: absolute;
   width: vw(30);
   height: vw(30);
+  @include pc {
+    width: hvw(30);
+    height: hvw(30);
+  }
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: vw(25);
     height: vw(7);
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+    @include pc {
+      width: hvw(29);
+      height: hvw(7);
+    }
   }
 }
 .swiper-button-prev {
+  left: vw(20);
+  @include pc {
+    left: hvw(60);
+  }
+  &::after {
+    transform: rotate(-40deg);
+    transform-origin: left center;
+    top: vw(20);
+    @include pc {
+      transform: rotate(-35deg);
+      top: hvw(-3);
+    }
+  }
+  &::before {
+    transform: rotate(40deg);
+    transform-origin: left center;
+    top: vw(15);
+    @include pc {
+      transform: rotate(35deg);
+      top: hvw(-3);
+    }
+  }
+}
+.swiper-button-next {
+  right: vw(20);
+  @include pc {
+    right: 1rem;
+    right: hvw(60);
+  }
   &::after {
     transform: rotate(45deg);
-    transform-origin: left center;
+    transform-origin: right center;
+    top: vw(20);
+    @include pc {
+      transform: rotate(-35deg);
+      top: hvw(-5);
+    }
+  }
+  &::before {
+    transform: rotate(-45deg);
+    transform-origin: right center;
+    top: vw(15);
+    @include pc {
+      transform: rotate(35deg);
+      top: hvw(-5);
+    }
   }
 }
 
