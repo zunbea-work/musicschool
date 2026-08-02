@@ -38,3 +38,32 @@
     }
   }
 }
+.c-button-wrapper {
+  font-size: vw(20);
+  line-height: calc(26 / 20);
+  font-weight: 700;
+  @include pc {
+    font-size: hvw(25);
+    line-height: calc(33 / 25);
+  }
+}
+.p-button {
+  height: vw(50);
+  border: 0.1rem solid $color-main;
+  color: #FFF;
+  background: $color-main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.4s, color 0.4s;
+  @include pc {
+    margin-top: hvw(50);
+    margin-inline: auto;
+    width: hvw(250);
+    height: hvw(50);
+  }
+  &:hover {
+    background: #FFF;
+    color: $color-main;
+  }
+}

@@ -557,6 +557,48 @@ img {
   }
 }
 
+.c-button-wrapper {
+  font-size: 5.3333333333vw;
+  line-height: 1.3;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .c-button-wrapper {
+    font-size: min(2.3148148148vw, 25px);
+    line-height: 1.32;
+  }
+}
+
+.p-button {
+  height: 13.3333333333vw;
+  border: 0.1rem solid #CB0000;
+  color: #FFF;
+  background: #CB0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.4s, color 0.4s;
+  transition: background 0.4s, color 0.4s;
+}
+@media (min-width: 768px) {
+  .p-button {
+    margin-top: min(4.6296296296vw, 50px);
+    margin-inline: auto;
+    width: min(23.1481481481vw, 250px);
+    height: min(4.6296296296vw, 50px);
+  }
+}
+.p-button:hover {
+  background: #FFF;
+  color: #CB0000;
+}
+
 .c-nav--header {
   position: fixed;
   top: 13.3333333333vw;
@@ -3184,43 +3226,37 @@ img {
 }
 .p-contact__button {
   margin-top: 13.3333333333vw;
-  height: 13.3333333333vw;
-  border: 0.1rem solid #CB0000;
-  color: #FFF;
-  background: #CB0000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: background 0.4s, color 0.4s;
-  transition: background 0.4s, color 0.4s;
 }
 @media (min-width: 768px) {
   .p-contact__button {
     margin-top: min(4.6296296296vw, 50px);
-    margin-inline: auto;
-    width: min(23.1481481481vw, 250px);
-    height: min(4.6296296296vw, 50px);
   }
 }
-.p-contact__button:hover {
-  background: #FFF;
-  color: #CB0000;
-}
 
-.p-button {
-  font-size: 5.3333333333vw;
-  line-height: 1.3;
-  font-weight: 700;
+.p-send {
+  padding: 12.5333333333vw 5.3333333333vw 13.3333333333vw;
 }
 @media (min-width: 768px) {
-  .p-button {
-    font-size: min(2.3148148148vw, 25px);
-    line-height: 1.32;
+  .p-send {
+    padding: min(6.2037037037vw, 67px) min(9.2592592593vw, 100px) min(8.3333333333vw, 90px);
+  }
+}
+.p-send__text {
+  font-size: 4.2666666667vw;
+  line-height: 1.875;
+}
+@media (min-width: 768px) {
+  .p-send__text {
+    font-size: min(1.6666666667vw, 18px);
+    line-height: 1.6666666667;
+    text-align: center;
+  }
+}
+.p-send__button {
+  margin-top: 10.4vw;
+}
+@media (min-width: 768px) {
+  .p-send__button {
+    margin-top: min(3.7037037037vw, 40px);
   }
 }
