@@ -1,10 +1,10 @@
 @use '../../foundation/variable' as *;
 @use '../../foundation/mixin' as *;
 
-.p-contact {
-  padding: vw(47) vw(20) vw(108);
+.p-send {
+  padding: vw(47) vw(20) vw(50);
   @include pc {
-    padding: hvw(68) hvw(100) hvw(100);
+    padding: hvw(67) hvw(100) hvw(90);
   }
   &__text {
     font-size: vw(16);
@@ -16,9 +16,9 @@
     }
   }
   &__button {
-    margin-top: vw(50);
+    margin-top: vw(39);
     @include pc {
-      margin-top: hvw(50);
+      margin-top: hvw(40);
     }
   }
 }
