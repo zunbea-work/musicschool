@@ -4,11 +4,14 @@
 .l-header {
   width: 100%;
   height: vw(50);
-  position: relative;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 2rem;
+  background: #FFF;
+  z-index: 9999;
   @include pc {
     width: hvw(1080);
     height: hvw(80);

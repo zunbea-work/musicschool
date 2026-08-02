@@ -1,0 +1,9 @@
+@use '../foundation/variable' as *;
+@use '../foundation/mixin' as *;
+
+.l-main {
+  margin-top: vw(50);
+  @include pc {
+    margin-top: hvw(80);
+  }
+}
