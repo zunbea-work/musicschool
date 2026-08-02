@@ -6,6 +6,8 @@
   <title>きたむらミュージックスクール</title>
   <link rel="shortcut icon" href="../img/common/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 <body>
   <div id="l-container">
@@ -82,80 +84,82 @@
               当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。<br>
               通常３営業日以内にメールにてご連絡させていただきます。
             </p>
-            <form class="p-form">
-              <div class="p-form__item">
-                <label for="company" class="p-form__label">会社名</label>
-                <input type="text" id="company" name="company" class="p-form__input" placeholder="きたむらミュージックスクール">
+            <form class="c-form">
+              <div class="c-form__item">
+                <label for="company" class="c-form__label">会社名</label>
+                <input type="text" id="company" name="company" class="c-form__input" placeholder="きたむらミュージックスクール">
               </div>
-              <div class="p-form__item">
-                <label for="name" class="p-form__label">お名前</label>
-                <input type="text" id="name" name="name" class="p-form__input" placeholder="北村　翔平">
+              <div class="c-form__item">
+                <label for="name" class="c-form__label">お名前</label>
+                <input type="text" id="name" name="name" class="c-form__input" placeholder="北村　翔平">
               </div>
-              <div class="p-form__item">
-                <label for="mail" class="p-form__label">メールアドレス</label>
-                <input type="email" id="mail" name="email" class="p-form__input" placeholder="info@kitamura.musicschool.jp">
+              <div class="c-form__item">
+                <label for="mail" class="c-form__label">メールアドレス</label>
+                <input type="email" id="mail" name="email" class="c-form__input" placeholder="info@kitamura.musicschool.jp">
               </div>
-              <div class="p-form__item">
-                <label for="tel" class="p-form__label">電話番号</label>
-                <input type="tel" id="tel" name="tel" class="p-form__input" placeholder="090-1234-5678">
+              <div class="c-form__item">
+                <label for="tel" class="c-form__label">電話番号</label>
+                <input type="tel" id="tel" name="tel" class="c-form__input" placeholder="090-1234-5678">
               </div>
-              <div class="p-form__item">
-                <p class="p-form__text">
+              <div class="c-form__item">
+                <p class="c-form__text">
                   目　的　(複数選択可)
                 </p>
-                <label for="plan" class="p-form__checkbox">
-                  <input type="checkbox" id="plan" name="contact_type" value="plan" class="p-form__checkbox-input">
-                  <span class="p-form__checkbox-box"></span>
-                  <span class="p-form__checkbox-text">
+                <label for="plan" class="c-form__checkbox">
+                  <input type="checkbox" id="plan" name="contact_type" value="plan" class="c-form__checkbox-input">
+                  <span class="c-form__checkbox-box"></span>
+                  <span class="c-form__checkbox-text">
                     プランについてのお問い合わせ
                   </span>
                 </label>
-                <label for="plan" class="p-form__checkbox">
-                  <input type="checkbox" id="consultation" name="contact_type" value="consultation" class="p-form__checkbox-input">
-                  <span class="p-form__checkbox-box"></span>
-                  <span class="p-form__checkbox-text">
+                <label for="consultation" class="c-form__checkbox">
+                  <input type="checkbox" id="consultation" name="contact_type" value="consultation" class="c-form__checkbox-input">
+                  <span class="c-form__checkbox-box"></span>
+                  <span class="c-form__checkbox-text">
                     ヒアリング
                   </span>
                 </label>
-                <label for="plan" class="p-form__checkbox">
-                  <input type="checkbox" id="request" name="contact_type" value="request" class="p-form__checkbox-input">
-                  <span class="p-form__checkbox-box"></span>
-                  <span class="p-form__checkbox-text">
+                <label for="request" class="c-form__checkbox">
+                  <input type="checkbox" id="request" name="contact_type" value="request" class="c-form__checkbox-input">
+                  <span class="c-form__checkbox-box"></span>
+                  <span class="c-form__checkbox-text">
                     資料請求
                   </span>
                 </label>
-                <label for="plan" class="p-form__checkbox">
-                  <input type="checkbox" id="other" name="contact_type" value="other" class="p-form__checkbox-input">
-                  <span class="p-form__checkbox-box"></span>
-                  <span class="p-form__checkbox-text">
+                <label for="other" class="c-form__checkbox">
+                  <input type="checkbox" id="other" name="contact_type" value="other" class="c-form__checkbox-input">
+                  <span class="c-form__checkbox-box"></span>
+                  <span class="c-form__checkbox-text">
                     その他
                   </span>
                 </label>
               </div>
-              <div class="p-form__textarea">
-                <label for="textarea" class="p-form__label">内　容</label>
-                <textarea name="textarea" id="textarea" placeholder="内容に関する詳細や備考等をご入力ください。"></textarea>
+              <div class="c-form__item">
+                <label for="textarea" class="c-form__label">内　容</label>
+                <textarea name="textarea" id="textarea" class="c-form__textarea" placeholder="内容に関する詳細や備考等をご入力ください。"></textarea>
               </div>
             </form>
 
             <div class="p-contact__button">
-              <a href="#" class="c-button">送信</a>
+              <a href="#" class="p-button">送 信</a>
             </div>
           </div>
         </section>
       </div>
     </main>
 
-    <div class="js-page-top c-page-top">
-      <span></span>
-      <span></span>
-    </div>
-
-    <!-- <section class="c-cta">
-      <div class="c-cta__inner">
-        <a href="#contact" class="c-button">お問い合わせ</a>
+    <div class="js-floating c-floating">
+      <div class="js-page-top c-page-top c-page-top--contact">
+        <span></span>
+        <span></span>
       </div>
-    </section> -->
+
+      <section class="c-cta">
+        <!-- <div class="c-cta__inner">
+          <a href="#contact" class="c-button">お問い合わせ</a>
+        </div> -->
+      </section>
+    </div>
 
     <footer>
       <div class="l-footer">
