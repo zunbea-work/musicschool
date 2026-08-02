@@ -866,6 +866,9 @@ img {
     right: min(10.7407407407vw, 116px);
   }
 }
+.c-page-top--contact {
+  bottom: 4.8vw;
+}
 .c-page-top span {
   position: absolute;
   top: 50%;
@@ -1238,6 +1241,111 @@ img {
 .c-floating.is-stop {
   -webkit-transform: translateY(-230px);
           transform: translateY(-230px);
+}
+
+.c-form {
+  margin-top: 7.7333333333vw;
+}
+.c-form__item {
+  margin-top: 3.4666666667vw;
+}
+.c-form__label {
+  display: block;
+  font-size: 4.2666666667vw;
+  line-height: 2.0625;
+}
+.c-form__input {
+  display: block;
+  width: 100%;
+  border: 0.05rem solid #000;
+  padding: 1.6vw 0 0 5.3333333333vw;
+}
+.c-form__input::-webkit-input-placeholder {
+  font-size: 4vw;
+  line-height: 2.2;
+  color: #B2B2B2;
+}
+.c-form__input::-moz-placeholder {
+  font-size: 4vw;
+  line-height: 2.2;
+  color: #B2B2B2;
+}
+.c-form__input:-ms-input-placeholder {
+  font-size: 4vw;
+  line-height: 2.2;
+  color: #B2B2B2;
+}
+.c-form__input::-ms-input-placeholder {
+  font-size: 4vw;
+  line-height: 2.2;
+  color: #B2B2B2;
+}
+.c-form__input::placeholder {
+  font-size: 4vw;
+  line-height: 2.2;
+  color: #B2B2B2;
+}
+.c-form__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.c-form__checkbox:not(:first-of-type) {
+  margin-top: 2.6666666667vw;
+}
+.c-form__checkbox-box {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 0.05rem solid #000;
+  position: relative;
+}
+.c-form__checkbox-text {
+  margin-left: 2.6666666667vw;
+  font-size: 4.2666666667vw;
+  line-height: 1.875;
+}
+.c-form__checkbox-input:checked + .c-form__checkbox-box::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  width: 0.5rem;
+  height: 1rem;
+  border-right: 0.1rem solid #000;
+  border-bottom: 0.1rem solid #000;
+}
+.c-form__textarea {
+  display: block;
+  width: 100%;
+  height: 50.6666666667vw;
+  border: 0.05rem solid #000;
+  padding: 3.2vw 5.3333333333vw;
+}
+.c-form__textarea::-webkit-input-placeholder {
+  font-size: 4vw;
+  line-height: 1.6666666667;
+}
+.c-form__textarea::-moz-placeholder {
+  font-size: 4vw;
+  line-height: 1.6666666667;
+}
+.c-form__textarea:-ms-input-placeholder {
+  font-size: 4vw;
+  line-height: 1.6666666667;
+}
+.c-form__textarea::-ms-input-placeholder {
+  font-size: 4vw;
+  line-height: 1.6666666667;
+}
+.c-form__textarea::placeholder {
+  font-size: 4vw;
+  line-height: 1.6666666667;
 }
 
 .p-fv {
@@ -2940,4 +3048,36 @@ img {
 
 .p-contact {
   padding: 12.5333333333vw 5.3333333333vw 28.8vw;
+}
+.p-contact__text {
+  font-size: 4.2666666667vw;
+  line-height: 1.875;
+}
+.p-contact__button {
+  margin-top: 13.3333333333vw;
+  height: 13.3333333333vw;
+  border: 0.1rem solid #CB0000;
+  color: #FFF;
+  background: #CB0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.4s, color 0.4s;
+  transition: background 0.4s, color 0.4s;
+}
+.p-contact__button:hover {
+  background: #FFF;
+  color: #CB0000;
+}
+
+.p-button {
+  font-size: 5.3333333333vw;
+  line-height: 1.3;
+  font-weight: 700;
 }

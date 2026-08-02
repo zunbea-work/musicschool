@@ -3,4 +3,28 @@
 
 .p-contact {
   padding: vw(47) vw(20) vw(108);
+  &__text {
+    font-size: vw(16);
+    line-height: calc(30 / 16);
+  }
+  &__button {
+    margin-top: vw(50);
+    height: vw(50);
+    border: 0.1rem solid $color-main;
+    color: #FFF;
+    background: $color-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.4s, color 0.4s;
+    &:hover {
+      background: #FFF;
+      color: $color-main;
+    }
+  }
+}
+.p-button {
+  font-size: vw(20);
+  line-height: calc(26 / 20);
+  font-weight: 700;
 }
