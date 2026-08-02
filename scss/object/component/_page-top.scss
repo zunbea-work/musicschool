@@ -16,6 +16,11 @@
   }
   &--contact {
     bottom: vw(18);
+    right: vw(30);
+    @include pc {
+      bottom: hvw(30);
+      right: hvw(100);
+    }
   }
   span {
     position: absolute;
