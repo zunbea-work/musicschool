@@ -3,9 +3,17 @@
 
 .p-contact {
   padding: vw(47) vw(20) vw(108);
+  @include pc {
+    padding: hvw(68) hvw(100) hvw(100);
+  }
   &__text {
     font-size: vw(16);
     line-height: calc(30 / 16);
+    @include pc {
+      font-size: hvw(18);
+      line-height: calc(30 / 18);
+      text-align: center;
+    }
   }
   &__button {
     margin-top: vw(50);
@@ -17,6 +25,12 @@
     justify-content: center;
     align-items: center;
     transition: background 0.4s, color 0.4s;
+    @include pc {
+      margin-top: hvw(50);
+      margin-inline: auto;
+      width: hvw(250);
+      height: hvw(50);
+    }
     &:hover {
       background: #FFF;
       color: $color-main;
@@ -27,4 +41,8 @@
   font-size: vw(20);
   line-height: calc(26 / 20);
   font-weight: 700;
+  @include pc {
+    font-size: hvw(25);
+    line-height: calc(33 / 25);
+  }
 }
