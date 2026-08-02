@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>きたむらミュージックスクール</title>
+  <link rel="shortcut icon" href="../img/common/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="l-container">
+    <header>
+      <div class="l-header">
+        <!-- logo -->
+        <div class="c-header__logo">
+          <a href="#">
+            <div class="c-header__logo-image">
+              <img src="../img/common/icon.svg" alt="きたむらミュージックスクール">
+            </div>
+            <h1 class="c-site-title">
+              <span class="c-site-title__main">きたむら</span>
+              <span class="c-site-title__sub">ミュージックスクール</span>
+            </h1>
+          </a>
+        </div>
+        <!-- ハンバーガーボタン -->
+        <div id="js-hamburger" class="c-hamburger u-sp-only">
+          <div class="c-hamburger__inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!-- メニュー -->
+        <nav class="c-nav c-nav--header">
+          <ul class="c-nav__list">
+            <li class="c-nav__item c-nav__item--line">
+              <a href="#price">料金</a>
+            </li>
+            <li class="c-nav__item c-nav__item--line">
+              <a href="#blog">ブログ</a>
+            </li>
+            <li class="c-nav__item c-nav__item--line">
+              <a href="#result">卒業実績</a>
+            </li>
+            <li class="c-nav__item c-nav__item--contact u-ps-only">
+              <a href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="l-main">
+        <div class="c-page-fv">
+          <div class="c-page-fv__image">
+            <picture>
+              <source media="(min-width: 768px)" srcset="../img/contact/Contact-pc.jpg">
+              <img src="../img/contact/Contact-sp.jpg" alt="">
+            </picture>
+          </div>
+          <div class="c-page-fv__textarea">
+            <h2 class="c-page-fv__catch">お問い合わせ</h2>
+          </div>
+        </div>
+        <nav class="c-breadcrumb" aria-label="c-breadcrumb">
+          <ul class="c-breadcrumb__list">
+            <li class="c-breadcrumb__item">
+              <a href="../index.html">ホーム</a>
+            </li>
+            <li>＞</li>
+            <li class="c-breadcrumb__item">
+              <a href="#">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="p-contact">
+          <div class="inner">
+            <p class="p-contact__text">
+              当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。<br>
+              通常３営業日以内にメールにてご連絡させていただきます。
+            </p>
+            <form class="p-form">
+              <div class="p-form__item">
+                <label for="company" class="p-form__label">会社名</label>
+                <input type="text" id="company" name="company" class="p-form__input" placeholder="きたむらミュージックスクール">
+              </div>
+              <div class="p-form__item">
+                <label for="name" class="p-form__label">お名前</label>
+                <input type="text" id="name" name="name" class="p-form__input" placeholder="北村　翔平">
+              </div>
+              <div class="p-form__item">
+                <label for="mail" class="p-form__label">メールアドレス</label>
+                <input type="email" id="mail" name="email" class="p-form__input" placeholder="info@kitamura.musicschool.jp">
+              </div>
+              <div class="p-form__item">
+                <label for="tel" class="p-form__label">電話番号</label>
+                <input type="tel" id="tel" name="tel" class="p-form__input" placeholder="090-1234-5678">
+              </div>
+              <div class="p-form__item">
+                <p class="p-form__text">
+                  目　的　(複数選択可)
+                </p>
+                <label for="plan" class="p-form__checkbox">
+                  <input type="checkbox" id="plan" name="contact_type" value="plan" class="p-form__checkbox-input">
+                  <span class="p-form__checkbox-box"></span>
+                  <span class="p-form__checkbox-text">
+                    プランについてのお問い合わせ
+                  </span>
+                </label>
+                <label for="plan" class="p-form__checkbox">
+                  <input type="checkbox" id="consultation" name="contact_type" value="consultation" class="p-form__checkbox-input">
+                  <span class="p-form__checkbox-box"></span>
+                  <span class="p-form__checkbox-text">
+                    ヒアリング
+                  </span>
+                </label>
+                <label for="plan" class="p-form__checkbox">
+                  <input type="checkbox" id="request" name="contact_type" value="request" class="p-form__checkbox-input">
+                  <span class="p-form__checkbox-box"></span>
+                  <span class="p-form__checkbox-text">
+                    資料請求
+                  </span>
+                </label>
+                <label for="plan" class="p-form__checkbox">
+                  <input type="checkbox" id="other" name="contact_type" value="other" class="p-form__checkbox-input">
+                  <span class="p-form__checkbox-box"></span>
+                  <span class="p-form__checkbox-text">
+                    その他
+                  </span>
+                </label>
+              </div>
+              <div class="p-form__textarea">
+                <label for="textarea" class="p-form__label">内　容</label>
+                <textarea name="textarea" id="textarea" placeholder="内容に関する詳細や備考等をご入力ください。"></textarea>
+              </div>
+            </form>
+
+            <div class="p-contact__button">
+              <a href="#" class="c-button">送信</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="js-page-top c-page-top">
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- <section class="c-cta">
+      <div class="c-cta__inner">
+        <a href="#contact" class="c-button">お問い合わせ</a>
+      </div>
+    </section> -->
+
+    <footer>
+      <div class="l-footer">
+        <div class="c-footer">
+          <nav class="c-nav--footer">
+            <ul class="c-nav__list">
+              <li class="c-nav__item">
+                <a href="#">ホーム</a>
+              </li>
+              <li class="c-nav__item">
+                <a href="#price">料金</a>
+              </li>
+              <li class="c-nav__item">
+                <a href="#blog">ブログ</a>
+              </li>
+              <li class="c-nav__item">
+                <a href="#result">卒業実績</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="c-footer__logo">
+            <img src="./img/common/icon-footer.svg" alt="">
+          </div>
+          <div class="c-footer__copyright">
+            <p>
+              Copyright &copy; 0000 KITAMURA music school Inc. All Rights
+            </p>
+          </div>
+          <div class="c-footer__sns">
+            <ul class="c-sns__list">
+              <li class="c-sns__item">
+                <a href="" class="c-sns__link">
+                  <img src="../img/common/icon-twitter.svg" alt="twitter">
+                </a>
+              </li>
+              <li class="c-sns__item">
+                <a href="" class="c-sns__link">
+                  <img src="../img/common/icon-facebook.svg" alt="facebook">
+                </a>
+              </li>
+              <li class="c-sns__item">
+                <a href="" class="c-sns__link">
+                  <img src="../img/common/icon-youtube.svg" alt="youtube">
+                </a>
+              </li>
+              <li class="c-sns__item">
+                <a href="" class="c-sns__link">
+                  <img src="../img/common/icon-instagram.svg" alt="instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
