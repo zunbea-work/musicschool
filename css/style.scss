@@ -14,7 +14,10 @@
 // headerの読み込み
 @use '../scss/layout/header';
 
-// headerの読み込み
+// mainの読み込み
+@use '../scss/layout/main';
+
+// footerの読み込み
 @use '../scss/layout/footer';
 
 // componentの読み込み

@@ -410,23 +410,35 @@
     }
     &-form {
       border: solid 0.05rem #000;
-      display: flex;
-      justify-content: center;
       padding: vw(20);
       @include pc {
         padding: hvw(15);
       }
     }
-    &-input {
+    &-area {
+      position: relative;
+      display: flex;
+      align-items: center;
       background: rgba(232, 232, 232, 1);
-      display: block;
-      width: 100%;
+      width: vw(295);
       height: vw(54);
       @include pc {
+        width: hvw(220);
+        height: hvw(40);
+      }
+    }
+    &-input {
+      position: absolute;
+      width: vw(241);
+      height: vw(54);
+      @include pc {
+        width: hvw(180);
         height: hvw(40);
       }
     }
     &-button {
+      position: absolute;
+      right: 0;
       background: #000;
       display: inline-block;
       width: vw(54);
@@ -500,25 +512,3 @@
   }
 }
 
-
-
-
-
-// .facebook {
-//   background:rgba(66, 88, 147, 1);
-//   @include pc {
-//     width: hvw(105);
-//   }
-// }
-// .twitter {
-//   background: rgba(74, 159, 235, 1);
-// }
-// .hatena {
-//   background: rgba(78, 172, 213, 1);
-// }
-// .line {
-//   background: rgba(82, 181, 52, 1);
-// }
-// .pocket {
-//   background: rgba(220, 79, 90, 1);
-// }
