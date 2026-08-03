@@ -1,0 +1,24 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-error {
+  padding: vw(47) vw(20) vw(50);
+  @include pc {
+    padding: hvw(68) hvw(100) hvw(90);
+  }
+  &__text {
+    font-size: vw(16);
+    line-height: calc(30 / 16);
+    @include pc {
+      font-size: hvw(18);
+      line-height: calc(30 / 18);
+      text-align: center;
+    }
+  }
+  &__button {
+    margin-top: vw(9);
+    @include pc {
+      margin-top: hvw(40);
+    }
+  }
+}
