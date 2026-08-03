@@ -3260,3 +3260,31 @@ img {
     margin-top: min(3.7037037037vw, 40px);
   }
 }
+
+.p-error {
+  padding: 12.5333333333vw 5.3333333333vw 13.3333333333vw;
+}
+@media (min-width: 768px) {
+  .p-error {
+    padding: min(6.2962962963vw, 68px) min(9.2592592593vw, 100px) min(8.3333333333vw, 90px);
+  }
+}
+.p-error__text {
+  font-size: 4.2666666667vw;
+  line-height: 1.875;
+}
+@media (min-width: 768px) {
+  .p-error__text {
+    font-size: min(1.6666666667vw, 18px);
+    line-height: 1.6666666667;
+    text-align: center;
+  }
+}
+.p-error__button {
+  margin-top: 2.4vw;
+}
+@media (min-width: 768px) {
+  .p-error__button {
+    margin-top: min(3.7037037037vw, 40px);
+  }
+}
