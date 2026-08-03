@@ -1,0 +1,33 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-search {
+  padding: vw(38) vw(20) vw(203);
+  @include pc {
+    padding: hvw(66) hvw(100) hvw(210);
+  }
+  &__area {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__keyword,
+  &__success {
+    font-size: vw(18);
+    line-height: calc(30 / 18);
+    @include pc {
+      font-size: hvw(18);
+      line-height: calc(30 / 18);
+    }
+  }
+  &__keyword {
+    span {
+      font-weight: 700;
+    }
+  }
+  &__blog {
+    margin-top: vw(42);
+    @include pc {
+      margin-top: hvw(42);
+    }
+  }
+}
