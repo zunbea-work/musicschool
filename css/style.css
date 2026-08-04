@@ -1271,7 +1271,7 @@ img {
   font-size: 4.2666666667vw;
   line-height: 2.0625;
   padding-top: 0.3rem;
-  padding-left: 5.3333333333vw;
+  padding-inline: 5.3333333333vw;
 }
 @media (min-width: 768px) {
   .c-breadcrumb__list {
@@ -1279,6 +1279,9 @@ img {
     font-size: min(1.4814814815vw, 16px);
     line-height: 2.0625;
   }
+}
+.c-breadcrumb__item--result {
+  line-height: 1.25;
 }
 
 .c-floating {
