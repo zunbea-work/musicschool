@@ -1,0 +1,59 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-result-details {
+  padding: vw(50) vw(20) vw(137);
+  &__image {
+    position: relative;
+    &-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: vw(100);
+      height: vw(30);
+      background: $color-main;
+      color: #FFF;
+      font-size: vw(15);
+      line-height: calc(25 / 15);
+      font-weight: 700;
+    }
+  }
+  &__contents {
+    margin-top: vw(30);
+    &-title {
+      font-size: vw(20);
+      line-height: calc(30 / 20);
+      font-weight: 700;
+    }
+    &-time {
+      margin-top: vw(6);
+      font-size: vw(17);
+      line-height: calc(30 / 17);
+    }
+  }
+  &__table {
+    margin-top: vw(21);
+    border-collapse: collapse;
+    width: 100%;
+    &-row {
+      width: 100%;
+    }
+    &-head {
+      width: vw(120);
+      font-weight: 700;
+      background: #E5E5E5;
+    }
+    &-head,
+    &-data {
+      height: vw(38);
+      border: solid 0.05rem #707070;
+      font-size: vw(18);
+      line-height: calc(30 / 17);
+      padding-top: vw(8);
+      padding-left: vw(10);
+    }
+  }
+}
