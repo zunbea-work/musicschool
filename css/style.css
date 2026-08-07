@@ -2849,87 +2849,6 @@ img {
     line-height: 1.65;
   }
 }
-.p-blog-details__pager {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 5.8666666667vw;
-     -moz-column-gap: 5.8666666667vw;
-          column-gap: 5.8666666667vw;
-  margin-top: 12vw;
-}
-@media (min-width: 768px) {
-  .p-blog-details__pager {
-    -webkit-column-gap: min(7.2222222222vw, 78px);
-       -moz-column-gap: min(7.2222222222vw, 78px);
-            column-gap: min(7.2222222222vw, 78px);
-    margin-top: min(5vw, 54px);
-  }
-}
-.p-blog-details__pager-contents {
-  margin-top: 4vw;
-}
-@media (min-width: 768px) {
-  .p-blog-details__pager-contents {
-    margin-top: min(1.4814814815vw, 16px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-column-gap: min(1.4814814815vw, 16px);
-       -moz-column-gap: min(1.4814814815vw, 16px);
-            column-gap: min(1.4814814815vw, 16px);
-  }
-}
-@media (min-width: 768px) {
-  .p-blog-details__pager-contents-image {
-    width: min(9.0740740741vw, 98px);
-  }
-}
-.p-blog-details__pager-prev .p-blog-details__pager-label {
-  padding-left: 5.3333333333vw;
-}
-@media (min-width: 768px) {
-  .p-blog-details__pager-prev .p-blog-details__pager-label {
-    padding-left: min(1.8518518519vw, 20px);
-  }
-}
-.p-blog-details__pager-next .p-blog-details__pager-label {
-  text-align: right;
-  padding-right: 5.3333333333vw;
-}
-@media (min-width: 768px) {
-  .p-blog-details__pager-next .p-blog-details__pager-label {
-    padding-right: min(1.6666666667vw, 18px);
-  }
-}
-.p-blog-details__pager-label {
-  display: block;
-  background: #000;
-  color: #FFF;
-  font-size: 4.5333333333vw;
-  line-height: 1.7647058824;
-  padding-block: 1.0666666667vw 0.8vw;
-}
-@media (min-width: 768px) {
-  .p-blog-details__pager-label {
-    font-size: min(1.5740740741vw, 17px);
-    padding-block: min(0.3703703704vw, 4px) min(0.2777777778vw, 3px);
-  }
-}
-.p-blog-details__pager-text {
-  font-size: 4.2666666667vw;
-  line-height: 1.5625;
-  font-weight: 700;
-}
-@media (min-width: 768px) {
-  .p-blog-details__pager-text {
-    font-size: min(1.4814814815vw, 16px);
-    line-height: 1.5625;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-}
 .p-blog-details__related {
   margin-top: 18.9333333333vw;
 }
@@ -3390,4 +3309,86 @@ img {
   line-height: 1.7647058824;
   padding-top: 2.1333333333vw;
   padding-left: 2.6666666667vw;
+}
+
+.p-pager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5.8666666667vw;
+     -moz-column-gap: 5.8666666667vw;
+          column-gap: 5.8666666667vw;
+  margin-top: 12vw;
+}
+@media (min-width: 768px) {
+  .p-pager {
+    -webkit-column-gap: min(7.2222222222vw, 78px);
+       -moz-column-gap: min(7.2222222222vw, 78px);
+            column-gap: min(7.2222222222vw, 78px);
+    margin-top: min(5vw, 54px);
+  }
+}
+.p-pager-contents {
+  margin-top: 4vw;
+}
+@media (min-width: 768px) {
+  .p-pager-contents {
+    margin-top: min(1.4814814815vw, 16px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: min(1.4814814815vw, 16px);
+       -moz-column-gap: min(1.4814814815vw, 16px);
+            column-gap: min(1.4814814815vw, 16px);
+  }
+}
+@media (min-width: 768px) {
+  .p-pager-contents-image {
+    width: min(9.0740740741vw, 98px);
+  }
+}
+.p-pager-prev .p-pager-label {
+  padding-left: 5.3333333333vw;
+}
+@media (min-width: 768px) {
+  .p-pager-prev .p-pager-label {
+    padding-left: min(1.8518518519vw, 20px);
+  }
+}
+.p-pager-next .p-pager-label {
+  text-align: right;
+  padding-right: 5.3333333333vw;
+}
+@media (min-width: 768px) {
+  .p-pager-next .p-pager-label {
+    padding-right: min(1.6666666667vw, 18px);
+  }
+}
+.p-pager-label {
+  display: block;
+  background: #000;
+  color: #FFF;
+  font-size: 4.5333333333vw;
+  line-height: 1.7647058824;
+  padding-block: 1.0666666667vw 0.8vw;
+}
+@media (min-width: 768px) {
+  .p-pager-label {
+    font-size: min(1.5740740741vw, 17px);
+    padding-block: min(0.3703703704vw, 4px) min(0.2777777778vw, 3px);
+  }
+}
+.p-pager-text {
+  font-size: 4.2666666667vw;
+  line-height: 1.5625;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .p-pager-text {
+    font-size: min(1.4814814815vw, 16px);
+    line-height: 1.5625;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }

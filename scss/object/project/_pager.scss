@@ -1,0 +1,64 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-pager {
+  display: flex;
+  column-gap: vw(22);
+  margin-top: vw(45);
+  @include pc {
+    column-gap: hvw(78);
+    margin-top: hvw(54);
+  }
+  &-contents {
+    margin-top: vw(15);
+    @include pc {
+      margin-top: hvw(16);
+      display: flex;
+      column-gap: hvw(16);
+    }
+    &-image {
+      @include pc {
+        width: hvw(98);
+      }
+    }
+  }
+  &-prev {
+    .p-pager-label {
+      padding-left: vw(20);
+      @include pc {
+        padding-left: hvw(20);
+      }
+    }
+  }
+  &-next {
+    .p-pager-label {
+      text-align: right;
+      padding-right: vw(20);
+      @include pc {
+        padding-right: hvw(18);
+      }
+    }
+  }
+  &-label {
+    display: block;
+    background: #000;
+    color: #FFF;
+    font-size: vw(17);
+    line-height: calc(30 / 17);
+    padding-block: vw(4) vw(3);
+    @include pc {
+      font-size: hvw(17);
+      padding-block: hvw(4) hvw(3);
+    }
+  }
+  &-text {
+    font-size: vw(16);
+    line-height: calc(25 / 16);
+    font-weight: 700;
+    @include pc {
+      font-size: hvw(16);
+      line-height: calc(25 / 16);
+      flex: 1;
+    }
+  }
+}
