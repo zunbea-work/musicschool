@@ -1283,6 +1283,11 @@ img {
 .c-breadcrumb__item--result {
   line-height: 1.25;
 }
+@media (min-width: 768px) {
+  .c-breadcrumb__item--result {
+    line-height: 2.0625;
+  }
+}
 
 .c-floating {
   position: fixed;
