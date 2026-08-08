@@ -39,10 +39,10 @@
 @use '../scss/foundation/utility';
 
 // contactの読み込み
-@use '../scss/object/project/contact_form';
+@use '../scss/object/project/contact-form';
 
 // contact-sendの読み込み
-@use '../scss/object/project/contact_send';
+@use '../scss/object/project/contact-send';
 
 // 404の読み込み
 @use '../scss/object/project/error';
@@ -50,8 +50,11 @@
 // searchの読み込み
 @use '../scss/object/project/search';
 
+// result-listの読み込み
+@use '../scss/object/project/result-list';
+
 // result-detailsの読み込み
-@use '../scss/object/project/result_details';
+@use '../scss/object/project/result-details';
 
 // pagerの読み込み
 @use '../scss/object/project/pager';
