@@ -1,7 +1,7 @@
 @use '../../foundation/variable' as *;
 @use '../../foundation/mixin' as *;
 
-.c-blog-card {
+.c-card {
   &:not(:first-of-type) {
     margin-top: vw(41);
     @include pc {
@@ -76,7 +76,7 @@
   @include pc {
     display: flex;
   }
-  .c-blog-card__image {
+  .c-card__image {
     @include pc {
       width: hvw(260);
       height: hvw(184);
@@ -87,7 +87,7 @@
     @include pc {
       margin-left: hvw(50);
     }
-    .c-blog-card__title {
+    .c-card__title {
       @include pc {
         margin-top: 0;
       }
@@ -97,7 +97,7 @@
         }
       }
     }
-    .c-blog-card__time {
+    .c-card__time {
       @include pc {
         text-align: left;
         margin-top: hvw(3);
