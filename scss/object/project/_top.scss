@@ -542,7 +542,7 @@
     }
   }
 }
-.c-blog-card--top {
+.c-card--top {
   &:not(:first-of-type) {
     @include pc {
       margin-top: 0;

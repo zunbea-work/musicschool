@@ -20,7 +20,7 @@
       column-gap: hvw(30);
       align-items: start;
     }
-    .c-blog-card__image {
+    .c-card__image {
       width: vw(160);
       @include pc {
         width: hvw(200);
@@ -95,7 +95,7 @@
         }
       }
     }
-    .c-blog-card__time {
+    .c-card__time {
       font-size: vw(17);
       line-height: calc(30 / 17);
       text-align: left;
