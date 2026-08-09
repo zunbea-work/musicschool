@@ -198,10 +198,61 @@
       margin-top: hvw(28);
     }
   }
+  &__card {
+    @include pc {
+      display: flex;
+    }
+    &:not(:first-of-type) {
+      margin-top: vw(39);
+      @include pc {
+        margin-top: hvw(50);
+        .p-top-feature__card__body {
+          margin-top: 0;
+        }
+      }
+    }
+    &-image {
+      @include pc {
+        width: hvw(350);
+        height: 100%;
+      }
+    }
+    &-body {
+      margin-top: vw(30);
+      @include pc {
+        flex: 1;
+        margin-top: hvw(7);
+      }
+    }
+    &-title {
+      font-size: vw(20);
+      line-height: calc(30 / 20);
+      font-weight: 700;
+      padding-bottom: vw(10);
+      border-bottom: solid vw(2) $color-main;
+      @include pc {
+        font-size: hvw(22);
+        line-height: calc(33 / 22);
+        padding-left: hvw(50);
+        padding-bottom: hvw(12);
+        border-bottom: solid hvw(2) $color-main;
+      }
+    }
+    &-text {
+      line-height: calc(30 / 16);
+      margin-top: vw(17);
+      @include pc {
+        font-size: hvw(18);
+        line-height: calc(33 / 18);
+        margin-top: hvw(37);
+        padding-left: hvw(50);
+      }
+    }
+  }
 }
 
 // result
-.p-result {
+.p-top-result {
   padding: vw(46) vw(20) vw(50);
   background: $color-main;
   position: relative;
@@ -287,7 +338,7 @@
 }
 
 // flow
-.p-flow {
+.p-top-flow {
   padding: vw(46) vw(20) 0;
   @include pc {
     padding: hvw(34) hvw(100) hvw(17);
@@ -422,7 +473,7 @@
 }
 
 // question
-.p-question {
+.p-top-question {
   padding: vw(55) vw(20) 0;
   @include pc {
     padding: hvw(90) hvw(100) 0;
@@ -532,18 +583,30 @@
 
 // blog
 .p-top-blog {
-  margin-top: vw(50);
+  margin-block: vw(50) vw(191);
+  @include pc {
+    margin-block: hvw(70) hvw(205);
+  }
   &__list {
     margin-top: vw(39);
-    &--top {
-      @include pc {
-        display: flex;
-        justify-content: space-between;
-        column-gap: hvw(50);
-      }
+    @include pc {
+      margin-top: hvw(38);
+      display: flex;
+      justify-content: space-between;
+      column-gap: hvw(50);
     }
   }
   &__item {
     margin-top: vw(41);
+    @include pc {
+      width: hvw(260);
+      margin-top: 0;
+    }
+    .c-card__image-img {
+      @include pc {
+        width: 100%;
+        height: hvw(200);
+      }
+    }
   }
 }
