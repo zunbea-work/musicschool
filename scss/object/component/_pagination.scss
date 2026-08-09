@@ -1,3 +1,48 @@
 @use '../../foundation/variable' as *;
 @use '../../foundation/mixin' as *;
 
+// ページ送り
+.c-pagination {
+  margin-top: vw(59);
+  @include pc {
+    margin-top: hvw(70);
+  }
+  &-list {
+    display: flex;
+    justify-content: center;
+    column-gap: vw(5);
+    @include pc {
+      column-gap: hvw(10);
+    }
+  }
+  &-item {
+    border: solid 1px #000;
+    width: vw(44);
+    height: vw(44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include pc {
+      width: hvw(50);
+      height: hvw(50);
+    }
+    &__current {
+      background: #000;
+      color: #FFF;
+    }
+    &--ellipsis {
+      border: none;
+      width: auto;
+      margin-inline: vw(3);
+    }
+    a {
+      font-size: vw(16);
+      line-height: calc(28 / 16);
+      font-weight: 700;
+      @include pc {
+        font-size: hvw(18);
+        line-height: calc(30 / 18);
+      }
+    }
+  }
+}
