@@ -1,7 +1,7 @@
 @use '../../foundation/variable' as *;
 @use '../../foundation/mixin' as *;
 
-.c-feature-card {
+.p-top-feature__card {
   @include pc {
     display: flex;
   }
@@ -9,7 +9,7 @@
     margin-top: vw(39);
     @include pc {
       margin-top: hvw(50);
-      .c-feature-card__body {
+      .p-top-feature__card__body {
         margin-top: 0;
       }
     }
