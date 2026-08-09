@@ -2,53 +2,5 @@
 @use '../../foundation/mixin' as *;
 
 .p-top-feature__card {
-  @include pc {
-    display: flex;
-  }
-  &:not(:first-of-type) {
-    margin-top: vw(39);
-    @include pc {
-      margin-top: hvw(50);
-      .p-top-feature__card__body {
-        margin-top: 0;
-      }
-    }
-  }
-  &__image {
-    @include pc {
-      width: hvw(350);
-      height: 100%;
-    }
-  }
-  &__body {
-    margin-top: vw(30);
-    @include pc {
-      flex: 1;
-      margin-top: hvw(7);
-    }
-  }
-  &__title {
-    font-size: vw(20);
-    line-height: calc(30 / 20);
-    font-weight: 700;
-    padding-bottom: vw(10);
-    border-bottom: solid vw(2) $color-main;
-    @include pc {
-      font-size: hvw(22);
-      line-height: calc(33 / 22);
-      padding-left: hvw(50);
-      padding-bottom: hvw(12);
-      border-bottom: solid hvw(2) $color-main;
-    }
-  }
-  &__text {
-    line-height: calc(30 / 16);
-    margin-top: vw(17);
-    @include pc {
-      font-size: hvw(18);
-      line-height: calc(33 / 18);
-      margin-top: hvw(37);
-      padding-left: hvw(50);
-    }
-  }
+  
 }

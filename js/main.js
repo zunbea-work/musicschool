@@ -47,7 +47,7 @@ $(function() {
   });
 
   // スライダー
-  const swiper = new Swiper('.p-result__swiper', {
+  const swiper = new Swiper('.p-top-result__swiper', {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 20,
@@ -65,7 +65,7 @@ $(function() {
   });
 
   // アコーディオンメニュー
-  $('.p-question__q').on('click', function() {
+  $('.p-top-question__q').on('click', function() {
     $(this).toggleClass('active');
     $(this).next().slideToggle();
   });
