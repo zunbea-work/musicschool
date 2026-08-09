@@ -2,7 +2,15 @@
 @use '../../foundation/mixin' as *;
 
 // 料金体系
-.p-princing {
+.p-pricing-fv {
+  .c-breadcrumb__list {
+    padding-top: vw(3);
+    @include pc {
+      padding-block: hvw(10) hvw(7);
+    }
+  }
+}
+.p-pricing {
   padding-top: vw(46);
   @include pc {
     padding-top: hvw(67);
