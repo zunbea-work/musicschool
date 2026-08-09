@@ -2,7 +2,7 @@
 @use '../../foundation/mixin' as *;
 
 // ファーストビュー
-.p-fv {
+.p-top-fv {
   position: relative;
   &__image {
     width: 100%;
@@ -37,7 +37,7 @@
 }
 
 // コンセプト
-.p-concept {
+.p-top-concept {
   padding: vw(46) vw(20) vw(34);
   @include pc {
     padding: hvw(66) hvw(110) hvw(55);
@@ -104,7 +104,7 @@
       width: hvw(3);
       height: hvw(188);
     }
-    .p-concept__arrow {
+    .p-top-concept__arrow {
       position: absolute;
       &:nth-of-type(1) {
         top: -0.4rem;
@@ -135,7 +135,7 @@
         }
       }
     }
-    .p-concept__ball {
+    .p-top-concept__ball {
       position: absolute;
       bottom: vw(-10);
       left: 50%;
@@ -166,7 +166,7 @@
 }
 
 // アバウト
-.p-about {
+.p-top-about {
   padding: vw(49) vw(20) vw(40);
   background: $color-main;
   @include pc {
@@ -187,12 +187,12 @@
 }
 
 // feature
-.p-feature {
+.p-top-feature {
   padding: vw(49) vw(20) vw(39);
   @include pc {
     padding: hvw(64) hvw(100) hvw(90);
   }
-  &-cards {
+  &__cards {
     margin-top: vw(36);
     @include pc {
       margin-top: hvw(28);
@@ -531,8 +531,10 @@
 }
 
 // blog
-.p-blog {
+.p-top-blog {
+  margin-top: vw(50);
   &__list {
+    margin-top: vw(39);
     &--top {
       @include pc {
         display: flex;
@@ -541,11 +543,7 @@
       }
     }
   }
-}
-.c-card--top {
-  &:not(:first-of-type) {
-    @include pc {
-      margin-top: 0;
-    }
+  &__item {
+    margin-top: vw(41);
   }
 }
