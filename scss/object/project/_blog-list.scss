@@ -1,0 +1,68 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+// blog
+.p-blog-list__fv {
+  .c-breadcrumb {
+    padding-top: vw(3);
+    @include pc {
+      padding-block: hvw(10) hvw(7);
+    }
+  }
+}
+.p-blog-list {
+  padding: vw(46) vw(20) vw(203);
+  @include pc {
+    padding: hvw(67) hvw(100) hvw(210);
+  }
+  &__list {
+    margin-top: vw(39);
+    @include pc {
+      margin-top: hvw(38);
+    }
+  }
+  &__item {
+    .c-card {
+      @include pc {
+        display: flex;
+        column-gap: hvw(50);
+      }
+      &__image {
+        @include pc {
+          width: hvw(260);
+          flex-shrink: 0;
+        }
+        &-img {
+          @include pc {
+            width: 100%;
+            height: hvw(184);
+          }
+        }
+      }
+      &__title {
+        @include pc {
+          margin-top: 0;
+        }
+      }
+      &__time {
+        @include pc {
+          text-align: left;
+          margin-top: hvw(3);
+        }
+      }
+      &__text {
+        @include pc {
+          margin-top: hvw(11);
+          font-size: hvw(18);
+          line-height: calc(30 / 18);
+        }
+      }
+    }
+    &:not(:first-of-type) {
+      margin-top: vw(39);
+      @include pc {
+        margin-top: hvw(68);
+      }
+    }
+  }
+}
