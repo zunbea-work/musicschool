@@ -2,14 +2,18 @@
 @use '../../foundation/mixin' as *;
 
 .c-card {
-  &:not(:first-of-type) {
-    margin-top: vw(41);
-    @include pc {
-      margin-top: hvw(70);
-    }
-  }
   &__image {
     position: relative;
+    width: 100%;
+    &-img {
+      width: 100%;
+      height: vw(200);
+      object-fit: cover;
+      @include pc {
+        width: hvw(387);
+        height: hvw(273);
+      }
+    }
     &-label {
       position: absolute;
       top: 0;
