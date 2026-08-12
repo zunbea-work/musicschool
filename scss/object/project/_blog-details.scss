@@ -16,17 +16,11 @@
     @include pc {
       width: hvw(600);
     }
-    .c-article__title {
-      @include pc {
-        font-size: hvw(25);
-        line-height: calc(40 / 25);
-        font-weight: 700;
-      }
-    }
-    .c-card__time {
-      @include pc {
-        margin-top: hvw(5);
-      }
+  }
+  .c-card__time {
+    text-align: left;
+    @include pc {
+      margin-top: hvw(5);
     }
   }
   &__sub {
@@ -36,19 +30,19 @@
       margin-top: 0;
     }
   }
-  .c-details-sns {
+  &__sns {
     margin-top: vw(21);
     @include pc {
       margin-top: hvw(21);
     }
-    &__list {
+    &-list {
       display: flex;
       column-gap: vw(3);
       @include pc {
         column-gap: hvw(4);
       }
     }
-    &__item {
+    &-item {
       width: vw(65);
       height: vw(40);
       display: flex;
@@ -128,11 +122,13 @@
     }
   }
   &__text {
-    margin-top: vw(10);
+    margin-top: vw(27);
     @include pc {
       margin-top: hvw(33);
     }
-    p {
+  }
+  &__paragraph {
+    &:not(:first-of-type) {
       margin-top: vw(17);
       font-size: vw(16);
       line-height: calc(30 / 16);
@@ -142,16 +138,16 @@
         line-height: calc(30 / 18);
       }
     }
-    h2 {
-      margin-top: vw(39);
-      font-size: vw(20);
-      line-height: calc(30 / 20);
-      font-weight: 700;
-      @include pc {
-        margin-top: hvw(33);
-        font-size: hvw(20);
-        line-height: calc(40 / 20);
-      }
+  }
+  &__heading {
+    margin-top: vw(39);
+    font-size: vw(20);
+    line-height: calc(30 / 20);
+    font-weight: 700;
+    @include pc {
+      margin-top: hvw(33);
+      font-size: hvw(20);
+      line-height: calc(40 / 20);
     }
   }
   &__contents {
@@ -256,6 +252,34 @@
           line-height: calc(33 / 20);
         }
       }
+    }
+  }
+  .p-related {
+    .c-card {
+      display: flex;
+      column-gap: vw(20);
+      align-items: center;
+      &__image {
+        width: vw(160);
+        height: vw(110);
+        &-img {
+          height: 100%;
+        }
+        &-label {
+          width: vw(80);
+          height: vw(30);
+        }
+      }
+      &__title {
+        margin-top: 0;
+        font-size: vw(17);
+      }
+      &__time {
+        margin-top: vw(4);
+      }
+    }
+    &__textarea {
+      flex: 1;
     }
   }
   &__newsletter {
