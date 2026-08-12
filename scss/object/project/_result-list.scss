@@ -1,17 +1,17 @@
 @use '../../foundation/variable' as *;
 @use '../../foundation/mixin' as *;
 
-.p-result-list__fv {
-  .c-breadcrumb__list {
-    @include pc {
-      padding-block: hvw(8) hvw(9);
-    }
-  }
-}
 .p-result-list {
   padding: vw(46) vw(20) vw(203);
   @include pc {
     padding: hvw(65) hvw(100) hvw(210);
+  }
+  &__fv {
+    .c-breadcrumb__list {
+      @include pc {
+        padding-block: hvw(8) hvw(9);
+      }
+    }
   }
   &__title {
     font-size: vw(25);
@@ -29,14 +29,23 @@
       margin-top: hvw(40);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: hvw(106) hvw(61);
+      gap: hvw(61) hvw(106);
     }
   }
   &__item {
+    @include pc {
+      display: block;
+      width: hvw(387);
+    }
     &:not(:first-of-type) {
       margin-top: vw(41);
       @include pc {
         margin-top: 0;
+      }
+    }
+    .c-card__image-label {
+      @include pc {
+        width: hvw(100);
       }
     }
   }
