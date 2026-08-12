@@ -3,19 +3,33 @@
 
 .l-header {
   width: 100%;
-  height: vw(50);
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 2rem;
   background: #FFF;
-  z-index: 9999;
+  z-index: 9998;
+  position: fixed;
+  height: vw(50);
+  top: 0;
+  left: 0;
   @include pc {
-    width: hvw(1080);
     height: hvw(80);
-    margin: 0 auto;
-    padding-inline: hvw(100);
+  }
+  &__inner {
+    width: 100%;
+    background: #FFF;
+    position: fixed;
+    height: vw(50);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    z-index: 9999;
+    @include pc {
+      width: hvw(1080);
+      height: hvw(80);
+      left: 50%;
+      transform: translateX(-50%);
+      padding-inline: hvw(100);
+    }
   }
 }
