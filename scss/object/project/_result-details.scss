@@ -6,6 +6,31 @@
   @include pc {
     padding: hvw(70) hvw(100) hvw(157);
   }
+  &__fv {
+    .c-breadcrumb {
+      &__list {
+        padding-block: vw(5) vw(6);
+        @include pc {
+          padding-block: hvw(10) hvw(7);
+        }
+      }
+      &__item,
+      &__separator {
+        line-height: calc(22 / 16);
+        @include pc {
+          line-height: calc(33 / 16);
+        }
+      }
+      &__item {
+        &--current {
+          line-height: calc(20 / 16);
+          @include pc {
+            line-height: calc(33 / 16);
+          }
+        }
+      }
+    }
+  }
   &__image {
     position: relative;
     &-text {
