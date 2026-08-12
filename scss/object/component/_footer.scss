@@ -3,6 +3,7 @@
 
 .c-footer {
   &__logo {
+    display: block;
     width: vw(32);
     margin: 1.8rem auto 0;
     @include pc {
