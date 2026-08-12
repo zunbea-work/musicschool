@@ -119,6 +119,7 @@
         font-weight: 700;
         color: #FFF;
         display: block;
+        white-space: nowrap;
         @include pc {
           font-size: hvw(17);
           line-height: calc(33 / 17);
