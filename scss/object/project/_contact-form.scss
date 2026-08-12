@@ -2,6 +2,14 @@
 @use '../../foundation/mixin' as *;
 
 .p-contact {
+  &__fv {
+    .c-breadcrumb__list {
+      padding-top: vw(3);
+      @include pc {
+        padding-block: hvw(10) hvw(7);
+      }
+    }
+  }
   padding: vw(47) vw(20) vw(108);
   @include pc {
     padding: hvw(68) hvw(100) hvw(100);

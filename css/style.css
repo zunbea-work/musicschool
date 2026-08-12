@@ -3175,6 +3175,14 @@ img {
   background: #CB0000;
 }
 
+.p-contact__fv .c-breadcrumb__list {
+  padding-top: 0.8vw;
+}
+@media (min-width: 768px) {
+  .p-contact__fv .c-breadcrumb__list {
+    padding-block: min(0.9259259259vw, 10px) min(0.6481481481vw, 7px);
+  }
+}
 .p-contact {
   padding: 12.5333333333vw 5.3333333333vw 28.8vw;
 }
