@@ -757,6 +757,7 @@ img {
   font-weight: 700;
   color: #FFF;
   display: block;
+  white-space: nowrap;
 }
 @media (min-width: 768px) {
   .c-nav--footer .c-nav__item a {
