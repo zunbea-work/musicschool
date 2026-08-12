@@ -6,6 +6,71 @@
   @include pc {
     padding: hvw(66) hvw(100) hvw(210);
   }
+  &__fv {
+    .c-breadcrumb__list {
+      padding-top: vw(3);
+      @include pc {
+        padding-block: hvw(10) hvw(7);
+      }
+    }
+  }
+  &__list {
+    margin-top: vw(42);
+    @include pc {
+      margin-top: hvw(42);;
+    }
+  }
+  &__item {
+    &:not(:first-of-type) {
+      margin-top: vw(39);
+    }
+    .c-card {
+      @include pc {
+        display: flex;
+        column-gap: hvw(50);
+      }
+      &__image {
+        @include pc {
+          width: hvw(260);
+          height: hvw(184);
+        }
+        &-img {
+          @include pc {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      &__contents {
+        @include pc {
+          flex: 1;
+        }
+      }
+      &__title {
+        @include pc {
+          margin-top: 0;
+        }
+      }
+      &__time {
+        @include pc {
+          text-align: left;
+          margin-top: hvw(3);
+        }
+      }
+      &__text {
+        @include pc {
+          margin-top: hvw(11);
+          font-size: hvw(18);
+          line-height: calc(30 / 18);
+        }
+        .u-ps-only {
+          @include pc {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
   &__area {
     display: flex;
     justify-content: space-between;
