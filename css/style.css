@@ -863,6 +863,7 @@ img {
 }
 
 .c-footer__logo {
+  display: block;
   width: 8.5333333333vw;
   margin: 1.8rem auto 0;
 }
