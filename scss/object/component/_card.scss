@@ -4,14 +4,13 @@
 .c-card {
   &__image {
     position: relative;
-    width: 100%;
     &-img {
       width: 100%;
       height: vw(200);
       object-fit: cover;
       @include pc {
-        width: hvw(387);
-        height: hvw(273);
+        width: 100%;
+        height: 100%;
       }
     }
     &-label {
