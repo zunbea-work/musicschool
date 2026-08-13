@@ -50,7 +50,7 @@ $(function() {
   const swiper = new Swiper('.p-top-result__swiper', {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 35,
 
     breakpoints: {
       768: {

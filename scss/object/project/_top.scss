@@ -38,9 +38,15 @@
 
 // コンセプト
 .p-top-concept {
-  padding: vw(46) vw(20) vw(34);
+  padding: vw(46) vw(20) vw(30);
   @include pc {
-    padding: hvw(66) hvw(110) hvw(55);
+    padding: hvw(66) hvw(100) hvw(55);
+  }
+  .c-section-title {
+    @include pc {
+      font-size: hvw(35);
+      line-height: calc(50 / 35);
+    }
   }
   &__text {
     font-size: vw(18);
@@ -62,18 +68,21 @@
   }
   &__contents {
     position: relative;
-    margin-top: vw(32);
+    margin-top: vw(36);
+    margin-right: vw(10);
     display: flex;
     justify-content: center;
     column-gap: vw(40);
     @include pc {
       margin-top: hvw(17);
+      margin-right: hvw(17);
       column-gap: hvw(40);
     }
     &-item {
       font-size: vw(20);
       line-height: calc(50 / 20);
       @include pc {
+        margin-top: hvw(2);
         font-size: hvw(25);
         line-height: calc(50 / 25);
       }
@@ -81,7 +90,8 @@
         &:not(:first-child) {
           padding-top: vw(17);
           @include pc {
-            padding-top: hvw(17);
+            padding-top: hvw(18);
+            padding-left: hvw(0);
           }
         }
       }
@@ -100,7 +110,7 @@
     background: $color-main;
     border-radius: 1rem;
     @include pc {
-      top: hvw(-25);
+      top: hvw(-20);
       width: hvw(3);
       height: hvw(188);
     }
@@ -145,20 +155,20 @@
       background: $color-main;
       border-radius: 50%;
       @include pc {
-        bottom: hvw(-8);
+        bottom: hvw(-6);
         width: hvw(20);
         height: hvw(20);
       }
       &:nth-of-type(3) {
-        bottom: vw(55);
+        bottom: vw(60);
         @include pc {
-          bottom: hvw(60);
+          bottom: hvw(65);
         }
       }
       &:nth-of-type(4) {
-        bottom: vw(120);
+        bottom: vw(125);
         @include pc {
-          bottom: hvw(125);
+          bottom: hvw(132);
         }
       }
     }
@@ -206,8 +216,10 @@
       margin-top: vw(39);
       @include pc {
         margin-top: hvw(50);
-        .p-top-feature__card__body {
-          margin-top: 0;
+      }
+      .p-top-feature__card-body {
+        @include pc {
+          margin-top: hvw(-2);
         }
       }
     }
@@ -221,30 +233,30 @@
       margin-top: vw(30);
       @include pc {
         flex: 1;
-        margin-top: hvw(7);
+        margin-top: hvw(8);
       }
     }
     &-title {
       font-size: vw(20);
       line-height: calc(30 / 20);
       font-weight: 700;
-      padding-bottom: vw(10);
-      border-bottom: solid vw(2) $color-main;
       @include pc {
         font-size: hvw(22);
         line-height: calc(33 / 22);
         padding-left: hvw(50);
-        padding-bottom: hvw(12);
-        border-bottom: solid hvw(2) $color-main;
       }
     }
     &-text {
       line-height: calc(30 / 16);
-      margin-top: vw(17);
+      padding-top: vw(17);
+      border-top: solid vw(2) $color-main;
+      margin-top: vw(8);
       @include pc {
         font-size: hvw(18);
         line-height: calc(33 / 18);
-        margin-top: hvw(37);
+        border-top: solid hvw(2) $color-main;
+        margin-top: hvw(9);
+        padding-top: hvw(35);
         padding-left: hvw(50);
       }
     }
@@ -261,6 +273,21 @@
   }
   &__swiper {
     overflow: hidden;
+    .swiper-slide {
+      @include pc {
+        width: hvw(270);
+      }
+    }
+  }
+  .c-result-card__textarea {
+    @include pc {
+      margin-top: hvw(17);
+    }
+    p {
+      @include pc {
+        margin-top: hvw(10);
+      }
+    }
   }
 }
 // swiper
@@ -272,6 +299,7 @@
   @include pc {
     width: hvw(30);
     height: hvw(30);
+    margin-top: 0;
   }
   &::before,
   &::after {
@@ -314,7 +342,6 @@
 .swiper-button-next {
   right: vw(20);
   @include pc {
-    right: 1rem;
     right: hvw(60);
   }
   &::after {
@@ -344,11 +371,11 @@
     padding: hvw(34) hvw(100) hvw(17);
   }
   &__contents {
-    margin-top: vw(38);
+    margin-top: vw(36);
     padding-left: vw(48);
     position: relative;
     @include pc {
-      margin-top: hvw(38);
+      margin-top: hvw(53);
       padding-left: hvw(121);
     }
   }
@@ -393,7 +420,7 @@
   &__arrow {
     position: absolute;
     top: vw(16);
-    left: vw(18);
+    left: vw(16);
     width: vw(3);
     height: vw(669);
     background: $color-main;
@@ -492,12 +519,13 @@
   }
   &__q {
     position: relative;
-    padding-block: vw(17) vw(9);
+    padding-block: vw(14) vw(9);
     display: flex;
     align-items: center;
     column-gap: vw(20);
     @include pc {
-      padding-block: hvw(15);
+      padding-block: hvw(16) hvw(13);
+      padding-left: hvw(20);
       column-gap: hvw(10);
     }
     &::after {
@@ -526,6 +554,7 @@
     display: none;
     background: rgba(203, 0, 0, 0.1);
     @include pc {
+      padding-left: hvw(20);
       padding-block: hvw(15);
     }
   }
@@ -583,14 +612,14 @@
 
 // blog
 .p-top-blog {
-  margin-block: vw(50) vw(191);
+  margin-block: vw(50) vw(192);
   @include pc {
     margin-block: hvw(70) hvw(205);
   }
   &__list {
     margin-top: vw(39);
     @include pc {
-      margin-top: hvw(38);
+      margin-top: hvw(34);
       display: flex;
       justify-content: space-between;
       column-gap: hvw(50);
