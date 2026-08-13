@@ -36,6 +36,7 @@
     p {
       font-size: vw(18);
       line-height: calc(30 / 18);
+      margin-top: vw(10);
       color: #FFF;
       @include pc {
         font-size: hvw(18);
