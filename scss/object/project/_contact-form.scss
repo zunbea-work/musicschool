@@ -3,6 +3,11 @@
 
 .p-contact {
   &__fv {
+    .c-page-fv__textarea {
+      @include pc {
+        padding-top: hvw(9);
+      }
+    }
     .c-breadcrumb__list {
       padding-top: vw(3);
       @include pc {
