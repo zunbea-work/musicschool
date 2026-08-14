@@ -6,6 +6,20 @@
   @include pc {
     padding: hvw(67) hvw(100) hvw(90);
   }
+  &__fv {
+    .c-page-fv__textarea {
+      padding-top: vw(9);
+      @include pc {
+        padding-top: hvw(9);
+      }
+    }
+    .c-breadcrumb__list {
+      padding-top: vw(3);
+      @include pc {
+        padding-block: hvw(10) hvw(7);
+      }
+    }
+  }
   &__text {
     font-size: vw(16);
     line-height: calc(30 / 16);
@@ -19,6 +33,11 @@
     margin-top: vw(39);
     @include pc {
       margin-top: hvw(40);
+    }
+    .p-button {
+      @include pc {
+        margin-top: hvw(40);
+      }
     }
   }
 }
