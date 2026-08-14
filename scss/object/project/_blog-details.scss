@@ -2,7 +2,7 @@
 @use '../../foundation/mixin' as *;
 
 .p-blog-details {
-  padding: vw(50) vw(20) vw(197);
+  padding: vw(50) vw(20) vw(195);
   @include pc {
     padding: hvw(70) hvw(20) hvw(187);
   }
@@ -45,17 +45,23 @@
       &__title {
         margin-top: vw(30);
         @include pc {
+          font-size: hvw(25);
+          line-height: calc(40 / 25);
           margin-top: hvw(46);
         }
       }
       &__time {
+        margin-top: vw(6);
         text-align: left;
+        @include pc {
+          margin-top: hvw(5);
+        }
       }
     }
   }
 
   &__sub {
-    margin-top: vw(30);
+    margin-top: vw(32);
     @include pc {
       flex: 1;
       margin-top: 0;
@@ -70,7 +76,7 @@
       display: flex;
       column-gap: vw(3);
       @include pc {
-        column-gap: hvw(4);
+        column-gap: hvw(3);
       }
     }
     &-item {
@@ -155,18 +161,23 @@
   &__text {
     margin-top: vw(27);
     @include pc {
-      margin-top: hvw(33);
+      margin-top: hvw(48);
+    }
+    .u-sp-only {
+      display: inline;
     }
   }
   &__paragraph {
+    font-size: vw(16);
+    line-height: calc(30 / 16);
+    @include pc {
+      font-size: hvw(18);
+      line-height: calc(30 / 18);
+    }
     &:not(:first-of-type) {
       margin-top: vw(17);
-      font-size: vw(16);
-      line-height: calc(30 / 16);
       @include pc {
         margin-top: hvw(15);
-        font-size: hvw(18);
-        line-height: calc(30 / 18);
       }
     }
   }
@@ -196,7 +207,7 @@
       margin-top: vw(27);
       font-size: vw(16);
       line-height: calc(30 / 16);
-      list-style: inside;
+      // list-style: inside;
       @include pc {
         margin-top: hvw(28);
         font-size: hvw(18);
@@ -241,8 +252,8 @@
       margin-top: vw(19.5);
       display: flex;
       align-items: start;
-      padding: 1.7rem 2rem 1.1rem 2.5rem;
-      column-gap: 2.5rem;
+      padding: vw(17) vw(20) vw(11) vw(25);
+      column-gap: vw(17);
       background: #E8E8E8;
       @include pc {
         margin-top: hvw(17);
@@ -251,8 +262,8 @@
       }
     }
     &-icon {
-      width: vw(27);
-      height: vw(23);
+      width: vw(28);
+      height: vw(33);
       @include pc {
         width: hvw(27);
         height: hvw(23);
@@ -321,7 +332,7 @@
           font-size: hvw(20);
           line-height: calc(25 / 20);
         }
-        .u-ps-only {
+        .u-pc-only {
           @include pc {
             display: inline;
           }
@@ -356,7 +367,7 @@
     }
   }
   &__search {
-    margin-top: vw(30);
+    margin-top: vw(28);
     @include pc {
       margin-top: hvw(30);
     }

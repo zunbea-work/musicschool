@@ -2,9 +2,9 @@
 @use '../../foundation/mixin' as *;
 
 .p-related {
-  margin-top: vw(71);
+  margin-top: vw(64);
   @include pc {
-    margin-top: hvw(100);
+    margin-top: hvw(93);
   }
   &__item {
     margin-top: vw(20);
@@ -90,7 +90,7 @@
       @include pc {
         font-size: hvw(20);
         line-height: calc(25 / 20);
-        .u-ps-only {
+        .u-pc-only {
           display: inline;
         }
       }
