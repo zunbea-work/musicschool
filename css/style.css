@@ -605,7 +605,6 @@ img {
 }
 @media (min-width: 768px) {
   .p-button {
-    margin-top: min(4.6296296296vw, 50px);
     margin-inline: auto;
     width: min(23.1481481481vw, 250px);
     height: min(4.6296296296vw, 50px);
@@ -3417,6 +3416,22 @@ img {
 @media (min-width: 768px) {
   .p-error {
     padding: min(6.2962962963vw, 68px) min(9.2592592593vw, 100px) min(8.3333333333vw, 90px);
+  }
+}
+.p-error__fv .c-page-fv__image-img {
+  height: 80vw;
+}
+@media (min-width: 768px) {
+  .p-error__fv .c-page-fv__image-img {
+    height: min(18.5185185185vw, 200px);
+  }
+}
+.p-error__fv .c-page-fv__textarea {
+  padding-top: 2.1333333333vw;
+}
+@media (min-width: 768px) {
+  .p-error__fv .c-page-fv__textarea {
+    padding-top: min(0.8333333333vw, 9px);
   }
 }
 .p-error__text {

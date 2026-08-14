@@ -6,6 +6,20 @@
   @include pc {
     padding: hvw(68) hvw(100) hvw(90);
   }
+  &__fv {
+    .c-page-fv__image-img {
+      height: vw(300);
+      @include pc {
+        height: hvw(200);
+      }
+    }
+    .c-page-fv__textarea {
+      padding-top: vw(8);
+      @include pc {
+        padding-top: hvw(9);
+      }
+    }
+  }
   &__text {
     font-size: vw(16);
     line-height: calc(30 / 16);
