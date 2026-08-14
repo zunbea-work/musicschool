@@ -3,6 +3,11 @@
 
 // 料金体系
 .p-pricing-fv {
+  .c-page-fv__textarea {
+    @include pc {
+      padding-top: hvw(9);
+    }
+  }
   .c-breadcrumb__list {
     padding-top: vw(3);
     @include pc {
@@ -13,7 +18,13 @@
 .p-pricing {
   padding-top: vw(46);
   @include pc {
-    padding-top: hvw(67);
+    padding-top: hvw(68);
+  }
+  .c-section-title {
+    @include pc {
+      font-size: hvw(25);
+      line-height: calc(38 / 25);
+    }
   }
   &__contents {
     display: flex;
@@ -21,7 +32,7 @@
     align-items: center;
     margin-top: 3.9rem;
     @include pc {
-      margin-top: hvw(40);
+      margin-top: hvw(34);
       flex-direction: row;
       justify-content: center;
       column-gap: hvw(30);
@@ -31,7 +42,7 @@
     &-box {
       margin-block: 1.9rem 2rem;
       @include pc {
-        margin-block: 1.85rem;
+        padding-top: hvw(9);
       }
     }
     &-text {
@@ -63,27 +74,41 @@
 
 // プラン内容・月額料金
 .p-plan {
-  padding-top: 3.8rem;
-  padding-bottom: 18.6rem;
+  padding-top: vw(38);
+  padding-bottom: vw(187);
   @include pc {
-    padding-bottom: 22.3rem;
+    padding-top: hvw(55);
+    padding-bottom: hvw(221);
+  }
+  .c-section-title {
+    @include pc {
+      font-size: hvw(25);
+      line-height: calc(38 / 25);
+    }
   }
   &__table-wrap {
     overflow-x: scroll;
     padding-bottom: 1.75rem;
     @include pc {
       overflow-x: scroll;
+      padding-bottom: 0;
     }
     &::-webkit-scrollbar {
       height: 2.3rem;
       background: rgba(80, 80, 80, 0.15);
+      @include pc {
+        display: none;
+      }
     }
     &::-webkit-scrollbar-thumb {
       background: rgba(80, 80, 80, 0.25);
     }
   }
   &__table {
-    margin-top: 3.6rem;
+    margin-top: vw(22);
+    @include pc {
+      margin-top: hvw(50);
+    }
   }
   &__price {
     border-top: #000 solid 0.5px;
@@ -114,7 +139,11 @@
   &-ball {
     width: 1.5rem;
     height: 1.5rem;
-    margin: 0 auto;
+    display: block;
+    margin: 0 auto vw(8);
+    @include pc {
+      margin: 0 auto hvw(8);
+    }
   }
   &-line {
     &::before {
@@ -133,6 +162,11 @@
     margin-top: 1.7rem;
     font-size: 1.6rem;
     line-height: calc(30 / 16);
+    @include pc {
+      font-size: hvw(17);
+      line-height: calc(25 / 17);
+      margin-top: hvw(28);
+    }
   }
   table {
     border-collapse: collapse;
@@ -171,10 +205,22 @@
         }
       }
       th {
-        padding-left: 1rem;
+        padding-left: vw(10);
+        @include pc {
+          padding-left: hvw(20);
+        }
       }
       td {
         text-align: center;
+        padding-top: vw(13);
+        @include pc {
+          padding-top: hvw(8);
+        }
+      }
+      .p-plan-table__price {
+        @include pc {
+          font-size: hvw(22);
+        }
       }
     }
   }
