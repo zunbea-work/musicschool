@@ -15,7 +15,7 @@
     }
   }
   &__list {
-    margin-top: vw(42);
+    margin-top: vw(40);
     @include pc {
       margin-top: hvw(42);;
     }
@@ -23,6 +23,9 @@
   &__item {
     &:not(:first-of-type) {
       margin-top: vw(39);
+      @include pc {
+        margin-top: hvw(69.5);
+      }
     }
     .c-card {
       @include pc {
@@ -68,6 +71,14 @@
             display: inline;
           }
         }
+      }
+    }
+    .c-card__text {
+      font-size: vw(16);
+      line-height: calc(30 / 16);
+      @include pc {
+        font-size: hvw(18);
+        line-height: calc(30 / 18);
       }
     }
   }
