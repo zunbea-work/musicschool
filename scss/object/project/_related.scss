@@ -15,7 +15,6 @@
   &__link {
     display: flex;
     column-gap: vw(20);
-    align-items: center;
     @include pc {
       column-gap: hvw(30);
       align-items: start;
