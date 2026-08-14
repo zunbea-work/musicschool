@@ -57,7 +57,6 @@
   align-items: center;
   transition: background 0.4s, color 0.4s;
   @include pc {
-    // margin-top: hvw(50);
     margin-inline: auto;
     width: hvw(250);
     height: hvw(50);

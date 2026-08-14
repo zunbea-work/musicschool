@@ -3471,7 +3471,7 @@ img {
   }
 }
 .p-search__list {
-  margin-top: 11.2vw;
+  margin-top: 10.6666666667vw;
 }
 @media (min-width: 768px) {
   .p-search__list {
@@ -3480,6 +3480,11 @@ img {
 }
 .p-search__item:not(:first-of-type) {
   margin-top: 10.4vw;
+}
+@media (min-width: 768px) {
+  .p-search__item:not(:first-of-type) {
+    margin-top: min(6.4351851852vw, 69.5px);
+  }
 }
 @media (min-width: 768px) {
   .p-search__item .c-card {
@@ -3531,6 +3536,16 @@ img {
 @media (min-width: 768px) {
   .p-search__item .c-card__text .u-pc-only {
     display: inline;
+  }
+}
+.p-search__item .c-card__text {
+  font-size: 4.2666666667vw;
+  line-height: 1.875;
+}
+@media (min-width: 768px) {
+  .p-search__item .c-card__text {
+    font-size: min(1.6666666667vw, 18px);
+    line-height: 1.6666666667;
   }
 }
 .p-search__area {
