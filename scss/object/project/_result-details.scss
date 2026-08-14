@@ -9,9 +9,10 @@
   &__fv {
     .c-breadcrumb {
       &__list {
-        padding-block: vw(5) vw(6);
+        padding-block: vw(9) vw(2);
         @include pc {
           padding-block: hvw(10) hvw(7);
+          column-gap: hvw(18);
         }
       }
       &__item,
@@ -129,7 +130,7 @@
     }
   }
   &__text {
-    margin-top: vw(28);
+    margin-top: vw(25);
     font-size: vw(18);
     line-height: calc(30 / 18);
     @include pc {
@@ -141,8 +142,15 @@
     }
   }
   .p-pager {
+    margin-top: vw(40);
     @include pc {
+      margin-top: hvw(57);
       column-gap: hvw(199);
+    }
+  }
+  .p-related {
+    @include pc {
+      margin-top: hvw(98);
     }
   }
 }
