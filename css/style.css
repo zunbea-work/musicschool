@@ -402,11 +402,11 @@ body {
   }
 }
 
-.u-ps-only {
+.u-pc-only {
   display: block;
 }
 @media (max-width: 767px) {
-  .u-ps-only {
+  .u-pc-only {
     display: none !important;
   }
 }
@@ -2663,7 +2663,7 @@ img {
 }
 
 .p-blog-details {
-  padding: 13.3333333333vw 5.3333333333vw 52.5333333333vw;
+  padding: 13.3333333333vw 5.3333333333vw 52vw;
 }
 @media (min-width: 768px) {
   .p-blog-details {
@@ -2712,14 +2712,22 @@ img {
 }
 @media (min-width: 768px) {
   .p-blog-details__main .c-card__title {
+    font-size: min(2.3148148148vw, 25px);
+    line-height: 1.6;
     margin-top: min(4.2592592593vw, 46px);
   }
 }
 .p-blog-details__main .c-card__time {
+  margin-top: 1.6vw;
   text-align: left;
 }
+@media (min-width: 768px) {
+  .p-blog-details__main .c-card__time {
+    margin-top: min(0.462962963vw, 5px);
+  }
+}
 .p-blog-details__sub {
-  margin-top: 8vw;
+  margin-top: 8.5333333333vw;
 }
 @media (min-width: 768px) {
   .p-blog-details__sub {
@@ -2747,9 +2755,9 @@ img {
 }
 @media (min-width: 768px) {
   .p-blog-details__sns-list {
-    -webkit-column-gap: min(0.3703703704vw, 4px);
-       -moz-column-gap: min(0.3703703704vw, 4px);
-            column-gap: min(0.3703703704vw, 4px);
+    -webkit-column-gap: min(0.2777777778vw, 3px);
+       -moz-column-gap: min(0.2777777778vw, 3px);
+            column-gap: min(0.2777777778vw, 3px);
   }
 }
 .p-blog-details__sns-item {
@@ -2869,19 +2877,28 @@ img {
 }
 @media (min-width: 768px) {
   .p-blog-details__text {
-    margin-top: min(3.0555555556vw, 33px);
+    margin-top: min(4.4444444444vw, 48px);
   }
 }
-.p-blog-details__paragraph:not(:first-of-type) {
-  margin-top: 4.5333333333vw;
+.p-blog-details__text .u-sp-only {
+  display: inline;
+}
+.p-blog-details__paragraph {
   font-size: 4.2666666667vw;
   line-height: 1.875;
 }
 @media (min-width: 768px) {
-  .p-blog-details__paragraph:not(:first-of-type) {
-    margin-top: min(1.3888888889vw, 15px);
+  .p-blog-details__paragraph {
     font-size: min(1.6666666667vw, 18px);
     line-height: 1.6666666667;
+  }
+}
+.p-blog-details__paragraph:not(:first-of-type) {
+  margin-top: 4.5333333333vw;
+}
+@media (min-width: 768px) {
+  .p-blog-details__paragraph:not(:first-of-type) {
+    margin-top: min(1.3888888889vw, 15px);
   }
 }
 .p-blog-details__heading {
@@ -2915,7 +2932,6 @@ img {
   margin-top: 7.2vw;
   font-size: 4.2666666667vw;
   line-height: 1.875;
-  list-style: inside;
 }
 @media (min-width: 768px) {
   .p-blog-details__contents-list {
@@ -2972,10 +2988,10 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  padding: 1.7rem 2rem 1.1rem 2.5rem;
-  -webkit-column-gap: 2.5rem;
-     -moz-column-gap: 2.5rem;
-          column-gap: 2.5rem;
+  padding: 4.5333333333vw 5.3333333333vw 2.9333333333vw 6.6666666667vw;
+  -webkit-column-gap: 4.5333333333vw;
+     -moz-column-gap: 4.5333333333vw;
+          column-gap: 4.5333333333vw;
   background: #E8E8E8;
 }
 @media (min-width: 768px) {
@@ -2988,8 +3004,8 @@ img {
   }
 }
 .p-blog-details__quote-icon {
-  width: 7.2vw;
-  height: 6.1333333333vw;
+  width: 7.4666666667vw;
+  height: 8.8vw;
 }
 @media (min-width: 768px) {
   .p-blog-details__quote-icon {
@@ -3087,7 +3103,7 @@ img {
   }
 }
 @media (min-width: 768px) {
-  .p-blog-details .p-related .c-card__title .u-ps-only {
+  .p-blog-details .p-related .c-card__title .u-pc-only {
     display: inline;
   }
 }
@@ -3128,7 +3144,7 @@ img {
   }
 }
 .p-blog-details__search {
-  margin-top: 8vw;
+  margin-top: 7.4666666667vw;
 }
 @media (min-width: 768px) {
   .p-blog-details__search {
@@ -3454,7 +3470,7 @@ img {
   }
 }
 @media (min-width: 768px) {
-  .p-search__item .c-card__text .u-ps-only {
+  .p-search__item .c-card__text .u-pc-only {
     display: inline;
   }
 }
@@ -3729,14 +3745,14 @@ img {
   -webkit-column-gap: 5.8666666667vw;
      -moz-column-gap: 5.8666666667vw;
           column-gap: 5.8666666667vw;
-  margin-top: 12vw;
+  margin-top: 11.4666666667vw;
 }
 @media (min-width: 768px) {
   .p-pager {
     -webkit-column-gap: min(7.2222222222vw, 78px);
        -moz-column-gap: min(7.2222222222vw, 78px);
             column-gap: min(7.2222222222vw, 78px);
-    margin-top: min(5vw, 54px);
+    margin-top: min(4.8148148148vw, 52px);
   }
 }
 .p-pager-contents {
@@ -3805,11 +3821,11 @@ img {
 }
 
 .p-related {
-  margin-top: 18.9333333333vw;
+  margin-top: 17.0666666667vw;
 }
 @media (min-width: 768px) {
   .p-related {
-    margin-top: min(9.2592592593vw, 100px);
+    margin-top: min(8.6111111111vw, 93px);
   }
 }
 .p-related__item {
@@ -3940,7 +3956,7 @@ img {
     font-size: min(1.8518518519vw, 20px);
     line-height: 1.25;
   }
-  .p-related__textarea-title .u-ps-only {
+  .p-related__textarea-title .u-pc-only {
     display: inline;
   }
 }

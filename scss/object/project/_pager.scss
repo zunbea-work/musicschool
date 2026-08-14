@@ -4,10 +4,10 @@
 .p-pager {
   display: flex;
   column-gap: vw(22);
-  margin-top: vw(45);
+  margin-top: vw(43);
   @include pc {
     column-gap: hvw(78);
-    margin-top: hvw(54);
+    margin-top: hvw(52);
   }
   &-contents {
     margin-top: vw(15);
