@@ -33,7 +33,10 @@
     &--ellipsis {
       border: none;
       width: auto;
-      margin-inline: vw(3);
+      margin-inline: vw(7);
+      @include pc {
+        margin-inline: hvw(10);
+      }
     }
     a {
       font-size: vw(16);
