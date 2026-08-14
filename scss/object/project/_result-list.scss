@@ -6,6 +6,12 @@
   @include pc {
     padding: hvw(65) hvw(100) hvw(210);
   }
+  .c-section-title {
+    @include pc {
+      font-size: hvw(25);
+      line-height: calc(38 / 25);
+    }
+  }
   &__fv {
     .c-breadcrumb__list {
       @include pc {
@@ -26,10 +32,10 @@
   &__list {
     margin-top: vw(39);
     @include pc {
-      margin-top: hvw(40);
+      margin-top: hvw(41);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: hvw(61) hvw(106);
+      column-gap: hvw(106);
     }
   }
   &__item {
@@ -40,12 +46,31 @@
     &:not(:first-of-type) {
       margin-top: vw(41);
       @include pc {
+        margin-top: hvw(70);
+      }
+    }
+    &:nth-child(-n + 2) {
+      @include pc {
         margin-top: 0;
       }
     }
-    .c-card__image-label {
+    &:nth-child(3),
+    &:nth-child(4) {
       @include pc {
-        width: hvw(100);
+        margin-top: hvw(60);
+      }
+    }
+    .c-card {
+      &__image-label {
+        @include pc {
+          width: hvw(100);
+        }
+      }
+      &__time {
+        @include pc {
+          font-size: hvw(18);
+          line-height: calc(32 / 18);
+        }
       }
     }
   }
