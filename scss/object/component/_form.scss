@@ -2,15 +2,31 @@
 @use '../../foundation/mixin' as *;
 
 .c-form {
-  margin-top: vw(29);
+  margin-top: vw(33);
   @include pc {
-    margin-top: hvw(35);
+    margin-top: hvw(64);
   }
   &__item {
-    margin-top: vw(13);
+    margin-top: vw(15);
     @include pc {
       display: flex;
       margin-top: hvw(30);
+    }
+    &--checkbox {
+      @include pc {
+        margin-top: hvw(27);
+      }
+    }
+    &--textarea {
+      margin-top: vw(6);
+      @include pc {
+        margin-top: hvw(28);
+      }
+      .c-form__text {
+        @include pc {
+          margin-top: hvw(6);
+        }
+      }
     }
   }
   &__label {
