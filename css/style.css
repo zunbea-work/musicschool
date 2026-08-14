@@ -3370,6 +3370,22 @@ img {
     padding: min(6.2037037037vw, 67px) min(9.2592592593vw, 100px) min(8.3333333333vw, 90px);
   }
 }
+.p-send__fv .c-page-fv__textarea {
+  padding-top: 2.4vw;
+}
+@media (min-width: 768px) {
+  .p-send__fv .c-page-fv__textarea {
+    padding-top: min(0.8333333333vw, 9px);
+  }
+}
+.p-send__fv .c-breadcrumb__list {
+  padding-top: 0.8vw;
+}
+@media (min-width: 768px) {
+  .p-send__fv .c-breadcrumb__list {
+    padding-block: min(0.9259259259vw, 10px) min(0.6481481481vw, 7px);
+  }
+}
 .p-send__text {
   font-size: 4.2666666667vw;
   line-height: 1.875;
@@ -3386,6 +3402,11 @@ img {
 }
 @media (min-width: 768px) {
   .p-send__button {
+    margin-top: min(3.7037037037vw, 40px);
+  }
+}
+@media (min-width: 768px) {
+  .p-send__button .p-button {
     margin-top: min(3.7037037037vw, 40px);
   }
 }
