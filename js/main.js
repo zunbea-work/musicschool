@@ -20,10 +20,14 @@ $(function() {
 
   $(window).on('scroll', function () {
 
+    // const scrollTop = $(window).scrollTop();
+    // const windowHeight = $(window).height();
+    // const footerTop = footer.offset().top;
+    // const footerDistance = footerTop - (scrollTop + windowHeight);
     const scrollTop = $(window).scrollTop();
-    const windowHeight = $(window).height();
-    const footerTop = footer.offset().top;
-    const footerDistance = footerTop - (scrollTop + windowHeight);
+    const footerTop = footer[0].getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    const footerDistance = footerTop - windowHeight;
 
     if (scrollTop > showPosition) {
       floating.fadeIn(fadeSpeed);
