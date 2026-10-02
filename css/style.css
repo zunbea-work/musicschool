@@ -994,6 +994,7 @@ img {
 }
 
 .c-result-card {
+  display: block;
   margin-top: 10.4vw;
 }
 @media (min-width: 768px) {
@@ -2234,6 +2235,9 @@ img {
      -moz-column-gap: 5.3333333333vw;
           column-gap: 5.3333333333vw;
 }
+.p-top-question__q:hover {
+  cursor: pointer;
+}
 @media (min-width: 768px) {
   .p-top-question__q {
     padding-block: min(1.4814814815vw, 16px) min(1.2037037037vw, 13px);
@@ -2271,6 +2275,9 @@ img {
   padding-block: 4.5333333333vw 2.4vw;
   display: none;
   background: rgba(203, 0, 0, 0.1);
+}
+.p-top-question__a:hover {
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .p-top-question__a {

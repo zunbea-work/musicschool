@@ -20,10 +20,6 @@ $(function() {
 
   $(window).on('scroll', function () {
 
-    // const scrollTop = $(window).scrollTop();
-    // const windowHeight = $(window).height();
-    // const footerTop = footer.offset().top;
-    // const footerDistance = footerTop - (scrollTop + windowHeight);
     const scrollTop = $(window).scrollTop();
     const footerTop = footer[0].getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
@@ -72,5 +68,10 @@ $(function() {
   $('.p-top-question__q').on('click', function() {
     $(this).toggleClass('active');
     $(this).next().slideToggle();
+  });
+
+  $('.p-top-question__a').on('click', function() {
+    $(this).slideUp();
+    $(this).prev().removeClass('active');
   });
 });

@@ -531,6 +531,9 @@
     display: flex;
     align-items: center;
     column-gap: vw(20);
+    &:hover {
+      cursor: pointer;
+    }
     @include pc {
       padding-block: hvw(16) hvw(13);
       padding-left: hvw(20);
@@ -561,6 +564,9 @@
     padding-block: vw(17) vw(9);
     display: none;
     background: rgba(203, 0, 0, 0.1);
+    &:hover {
+      cursor: pointer;
+    }
     @include pc {
       padding-left: hvw(20);
       padding-block: hvw(15);

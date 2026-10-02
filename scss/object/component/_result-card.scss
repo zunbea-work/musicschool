@@ -3,6 +3,7 @@
 
 // result-card
 .c-result-card {
+  display: block;
   margin-top: vw(39);
   @include pc {
     margin-top: hvw(36);
