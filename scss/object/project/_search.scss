@@ -8,7 +8,6 @@
   }
   &__fv {
     .c-breadcrumb__list {
-      padding-top: vw(3);
       @include pc {
         padding-block: hvw(10) hvw(7);
       }

@@ -46,4 +46,10 @@
       line-height: calc(33 / 16);
     }
   }
+  &__item {
+    a {
+      display: block;
+      height: vw(36);
+    }
+  }
 }

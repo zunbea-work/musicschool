@@ -4,9 +4,10 @@
 // blog
 .p-blog-list__fv {
   .c-breadcrumb {
-    padding-top: vw(3);
-    @include pc {
-      padding-block: hvw(10) hvw(7);
+    &__list {
+      @include pc {
+        padding-block: hvw(10) hvw(7);
+      }
     }
   }
 }
