@@ -694,6 +694,7 @@ img {
   font-weight: 700;
   display: block;
   color: #FFF;
+  opacity: 1;
 }
 @media (min-width: 768px) {
   .c-nav--header .c-nav__item a {
@@ -701,6 +702,15 @@ img {
     line-height: 1.9411764706;
     color: #000;
   }
+}
+.c-nav--header .c-nav__item--line a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 @media (min-width: 768px) {
   .c-nav--header .c-nav__item--line a {

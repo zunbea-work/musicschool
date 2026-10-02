@@ -42,6 +42,7 @@
         font-weight: 700;
         display: block;
         color: #FFF;
+        opacity: 1;
         @include pc {
           font-size: hvw(17);
           line-height: calc(33 / 17);
@@ -50,6 +51,9 @@
       }
       &--line {
         a {
+          display: flex;
+          align-items: center;
+          height: 100%;
           @include pc {
             position: relative;
             &::after {
