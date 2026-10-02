@@ -5,6 +5,14 @@
   font-size: vw(13);
   line-height: calc(14 / 13);
   font-weight: 700;
+  &__inner {
+    display: flex;
+    column-gap: vw(10);
+    align-items: center;
+    @include pc {
+      column-gap: hvw(10);
+    }
+  }
   &__main {
     @include pc {
       font-size: hvw(20);

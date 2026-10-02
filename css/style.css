@@ -514,6 +514,24 @@ img {
   line-height: 1.0769230769;
   font-weight: 700;
 }
+.c-site-title__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2.6666666667vw;
+     -moz-column-gap: 2.6666666667vw;
+          column-gap: 2.6666666667vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  .c-site-title__inner {
+    -webkit-column-gap: min(0.9259259259vw, 10px);
+       -moz-column-gap: min(0.9259259259vw, 10px);
+            column-gap: min(0.9259259259vw, 10px);
+  }
+}
 @media (min-width: 768px) {
   .c-site-title__main {
     font-size: min(1.8518518519vw, 20px);
