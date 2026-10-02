@@ -67,38 +67,68 @@
     }
   }
   &__contents {
-    position: relative;
-    margin-top: vw(36);
-    margin-right: vw(10);
+    text-align: center;
+    margin-top: vw(39);
+  }
+  &__item {
     display: flex;
     justify-content: center;
-    column-gap: vw(40);
-    @include pc {
-      margin-top: hvw(17);
-      margin-right: hvw(17);
-      column-gap: hvw(40);
+    align-items: center;
+    column-gap: vw(30);
+    position: relative;
+    & + & {
+      margin-top: vw(17);
     }
-    &-item {
+    &--en {
       font-size: vw(20);
       line-height: calc(50 / 20);
-      @include pc {
-        margin-top: hvw(2);
-        font-size: hvw(25);
-        line-height: calc(50 / 25);
+      font-weight: 700;
+      color: $color-main;
+      width: vw(127.5);
+      text-align: right;
+    }
+    &--circle {
+      width: vw(20);
+      height: vw(20);
+      background: $color-main;
+      border-radius: 50%;
+    }
+    &--ja {
+      font-size: vw(20);
+      line-height: calc(50 / 20);
+      width: vw(127.5);
+      text-align: left;
+    }
+    span {
+      display: inline-block;
+      position: absolute;
+      bottom: vw(23);
+      width: vw(3);
+      height: vw(188);
+      background: $color-main;
+      &::after {
+        content: '';
+        display: block;
+        width: vw(21);
+        height: vw(3);
+        background: $color-main;
+        transform: rotate(45deg);
+        position: absolute;
+        top: vw(5);
+        left: vw(-2.5);
+        border-radius: 10rem;
       }
-      p {
-        &:not(:first-child) {
-          padding-top: vw(17);
-          @include pc {
-            padding-top: hvw(18);
-            padding-left: hvw(0);
-          }
-        }
-      }
-      &:nth-of-type(1) {
-        text-align: right;
-        color: $color-main;
-        font-weight: 700;
+      &::before {
+        content: '';
+        display: block;
+        width: vw(21);
+        height: vw(3);
+        background: $color-main;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: vw(5);
+        right: vw(-2.5);
+        border-radius: 10rem;
       }
     }
   }
@@ -294,25 +324,13 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  width: vw(30);
-  height: vw(30);
+  width: vw(40);
+  height: vw(40);
+  transform: translateY(15%);
   @include pc {
-    width: hvw(30);
-    height: hvw(30);
+    // width: hvw(30);
+    // height: hvw(30);
     margin-top: 0;
-  }
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: vw(25);
-    height: vw(7);
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    @include pc {
-      width: hvw(29);
-      height: hvw(7);
-    }
   }
 }
 .swiper-button-prev {
@@ -320,47 +338,11 @@
   @include pc {
     left: hvw(60);
   }
-  &::after {
-    transform: rotate(-40deg);
-    transform-origin: left center;
-    top: vw(20);
-    @include pc {
-      transform: rotate(-35deg);
-      top: hvw(-3);
-    }
-  }
-  &::before {
-    transform: rotate(40deg);
-    transform-origin: left center;
-    top: vw(15);
-    @include pc {
-      transform: rotate(35deg);
-      top: hvw(-3);
-    }
-  }
 }
 .swiper-button-next {
-  right: vw(20);
+  right: vw(5);
   @include pc {
     right: hvw(60);
-  }
-  &::after {
-    transform: rotate(45deg);
-    transform-origin: right center;
-    top: vw(20);
-    @include pc {
-      transform: rotate(-35deg);
-      top: hvw(-5);
-    }
-  }
-  &::before {
-    transform: rotate(-45deg);
-    transform-origin: right center;
-    top: vw(15);
-    @include pc {
-      transform: rotate(35deg);
-      top: hvw(-5);
-    }
   }
 }
 
@@ -385,6 +367,7 @@
     }
   }
   &__item {
+    position: relative;
     @include pc {
       display: flex;
       column-gap: hvw(38);
@@ -417,83 +400,25 @@
       }
     }
   }
-  &__arrow {
+  &__circle {
+    content: '';
     position: absolute;
-    top: vw(16);
-    left: vw(16);
-    width: vw(3);
-    height: vw(669);
-    background: $color-main;
-    @include pc {
-      top: hvw(20);
-      left: 6.1rem;
-      width: hvw(3);
-      height: 100%;
-    }
-    &::before {
-      content: '';
-      width: vw(21);
-      height: vw(3);
-      background: $color-main;
-      position: absolute;
-      bottom: -3px;
-      right: 1px;
-      border-radius: 10px 0 0 10px;
-      transform: rotate(45deg);
-      transform-origin: right;
-      @include pc {
-        width: hvw(21);
-        height: hvw(3);
-      }
-    }
-    &::after {
-      content: '';
-      width: vw(21);
-      height: vw(3);
-      background: $color-main;
-      position: absolute;
-      bottom: -3px;
-      left: 1px;
-      border-radius: 0 10px 10px 0;
-      transform: rotate(-45deg);
-      transform-origin: left;
-      @include pc {
-        width: hvw(21);
-        height: hvw(3);
-      }
-    }
-  }
-  &__ball {
-    position: absolute;
-    top: vw(-10);
-    left: vw(-8);
+    top: vw(7);
+    left: vw(-40);
     width: vw(20);
     height: vw(20);
     background: $color-main;
     border-radius: 50%;
-    @include pc {
-      top: -1.2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      width: hvw(20);
-      height: hvw(20);
-    }
-    &:nth-of-type(2) {
-      top: vw(158);
-      @include pc {
-        top: hvw(105);
-      }
-    }
-    &:nth-of-type(3) {
-      top: vw(356);
-      @include pc {
-        top: hvw(222);
-      }
-    }
-    &:nth-of-type(4) {
-      top: vw(524);
-      @include pc {
-        top: hvw(342);
+    span {
+      content: '';
+      position: absolute;
+      top: vw(10);
+      left: vw(8.5);
+      width: vw(3);
+      height: vw(669);
+      background: $color-main;
+      &::after {
+        content: '';
       }
     }
   }
