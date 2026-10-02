@@ -50,6 +50,20 @@
     a {
       display: block;
       height: vw(36);
+      line-height: vw(36);
+      @include pc {
+        height: hvw(36);
+        line-height: hvw(36);
+      }
+    }
+  }
+  &__separator {
+    display: block;
+    height: vw(36);
+    line-height: vw(36);
+    @include pc {
+      height: hvw(36);
+      line-height: hvw(36);
     }
   }
 }

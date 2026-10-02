@@ -9,7 +9,6 @@
   &__fv {
     .c-breadcrumb {
       &__list {
-        padding-block: vw(9) vw(2);
         @include pc {
           padding-block: hvw(10) hvw(7);
           column-gap: hvw(18);
