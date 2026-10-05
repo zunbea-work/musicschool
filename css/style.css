@@ -1226,26 +1226,43 @@ img {
     line-height: 2.0625;
   }
 }
-.c-breadcrumb__item a {
-  display: block;
-  height: 9.6vw;
-  line-height: 9.6vw;
+.c-breadcrumb__item, .c-breadcrumb__separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8.8vw;
+  line-height: 2.0625;
 }
 @media (min-width: 768px) {
-  .c-breadcrumb__item a {
-    height: min(3.3333333333vw, 36px);
-    line-height: min(3.3333333333vw, 36px);
+  .c-breadcrumb__item, .c-breadcrumb__separator {
+    height: min(3.0555555556vw, 33px);
   }
 }
-.c-breadcrumb__separator {
-  display: block;
-  height: 9.6vw;
-  line-height: 9.6vw;
+.c-breadcrumb__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.c-breadcrumb__item--current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8.8vw;
+  line-height: 2.0625;
 }
 @media (min-width: 768px) {
-  .c-breadcrumb__separator {
-    height: min(3.3333333333vw, 36px);
-    line-height: min(3.3333333333vw, 36px);
+  .c-breadcrumb__item--current {
+    height: min(3.0555555556vw, 33px);
   }
 }
 
@@ -2403,6 +2420,9 @@ img {
     padding-top: min(0.8333333333vw, 9px);
   }
 }
+.p-pricing-fv .c-breadcrumb__list {
+  padding-top: 0.8vw;
+}
 @media (min-width: 768px) {
   .p-pricing-fv .c-breadcrumb__list {
     padding-block: min(0.9259259259vw, 10px) min(0.6481481481vw, 7px);
@@ -2668,6 +2688,9 @@ img {
   }
 }
 
+.p-blog-list__fv .c-breadcrumb__list {
+  padding-top: 0.8vw;
+}
 @media (min-width: 768px) {
   .p-blog-list__fv .c-breadcrumb__list {
     padding-block: min(0.9259259259vw, 10px) min(0.6481481481vw, 7px);
@@ -2758,6 +2781,9 @@ img {
     padding: min(6.4814814815vw, 70px) min(1.8518518519vw, 20px) min(17.3148148148vw, 187px);
   }
 }
+.p-blog-details__fv .c-breadcrumb__list {
+  padding-top: 0.8vw;
+}
 @media (min-width: 768px) {
   .p-blog-details__fv .c-breadcrumb__list {
     padding-block: min(0.9259259259vw, 10px) min(0.6481481481vw, 7px);
@@ -2769,6 +2795,14 @@ img {
 @media (min-width: 768px) {
   .p-blog-details__fv .c-breadcrumb__item, .p-blog-details__fv .c-breadcrumb__separator {
     line-height: 2.0625;
+  }
+}
+.p-blog-details__fv .c-breadcrumb__item--current {
+  margin-top: -2.6666666667vw;
+}
+@media (min-width: 768px) {
+  .p-blog-details__fv .c-breadcrumb__item--current {
+    margin-top: 0;
   }
 }
 @media (min-width: 768px) {
@@ -3524,6 +3558,9 @@ img {
     padding: min(6.1111111111vw, 66px) min(9.2592592593vw, 100px) min(19.4444444444vw, 210px);
   }
 }
+.p-search__fv .c-breadcrumb__list {
+  padding-top: 0.8vw;
+}
 @media (min-width: 768px) {
   .p-search__fv .c-breadcrumb__list {
     padding-block: min(0.9259259259vw, 10px) min(0.6481481481vw, 7px);
@@ -3651,6 +3688,9 @@ img {
     line-height: 1.52;
   }
 }
+.p-result-list__fv .c-breadcrumb__list {
+  padding-top: 0.8vw;
+}
 @media (min-width: 768px) {
   .p-result-list__fv .c-breadcrumb__list {
     padding-block: min(0.7407407407vw, 8px) min(0.8333333333vw, 9px);
@@ -3743,20 +3783,30 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 7.4666666667vw;
-  line-height: 1.375;
+  height: 8.8vw;
+  line-height: 2.0625;
 }
 @media (min-width: 768px) {
   .p-result-details__fv .c-breadcrumb__item, .p-result-details__fv .c-breadcrumb__separator {
+    height: min(3.0555555556vw, 33px);
     line-height: 2.0625;
   }
 }
 .p-result-details__fv .c-breadcrumb__item--current {
+  margin-top: -1.3333333333vw;
   height: 10.6666666667vw;
   line-height: 1.25;
 }
 @media (min-width: 768px) {
   .p-result-details__fv .c-breadcrumb__item--current {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+    height: min(3.0555555556vw, 33px);
     line-height: 2.0625;
   }
 }

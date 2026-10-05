@@ -8,6 +8,7 @@
   }
   &__fv {
     .c-breadcrumb__list {
+      padding-top: vw(3);
       @include pc {
         padding-block: hvw(10) hvw(7);
       }
@@ -16,7 +17,7 @@
   &__list {
     margin-top: vw(40);
     @include pc {
-      margin-top: hvw(42);;
+      margin-top: hvw(42);
     }
   }
   &__item {
