@@ -7,17 +7,18 @@
     padding: hvw(66) hvw(100) hvw(210);
   }
   &__fv {
-    .c-breadcrumb__list {
-      padding-top: vw(3);
-      @include pc {
-        padding-block: hvw(10) hvw(7);
+    .c-breadcrumb {
+      &__item {
+        a {
+          display: flex;
+        }
       }
     }
   }
   &__list {
-    margin-top: vw(40);
+    margin-top: vw(42);
     @include pc {
-      margin-top: hvw(42);
+      margin-top: hvw(40);
     }
   }
   &__item {

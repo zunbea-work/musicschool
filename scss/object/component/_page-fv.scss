@@ -35,6 +35,7 @@
   background: rgba(232, 232, 232, 1);
   &__list {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     column-gap: 1.9rem;
     font-size: vw(16);
@@ -50,10 +51,10 @@
   &__separator {
     display: flex;
     align-items: center;
-    height: vw(33);
+    height: vw(36);
     line-height: (33 / 16);
     @include pc {
-      height: hvw(33);
+      height: hvw(50);
     }
   }
   &__item {
